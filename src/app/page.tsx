@@ -1,5 +1,11 @@
-import { Flex } from '@chakra-ui/react';
+'use client';
+import Hero from '@/components/hero/Hero';
+import PageLayout from '@/components/layouts/page-layout/PageLayout';
 
 export default function Home() {
-	return <Flex>ABC</Flex>;
+	return (
+		<PageLayout>
+			<Hero />
+		</PageLayout>
+	);
 }
