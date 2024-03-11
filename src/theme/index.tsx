@@ -10,6 +10,7 @@ const config: ThemeConfig = {
 // 3. extend the theme
 const colors = {
 	background: '#121212',
+	'custom-green': '#1DB954',
 };
 
 const shadows = {};

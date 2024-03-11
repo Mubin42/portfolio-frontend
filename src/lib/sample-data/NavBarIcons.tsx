@@ -1,7 +1,7 @@
 import { FaFacebook, FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa';
 import { IconType } from 'react-icons';
 
-type NavIconsType = {
+export type NavIconsType = {
 	title: string;
 	icon: IconType;
 	href: string;
