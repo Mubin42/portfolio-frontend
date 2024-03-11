@@ -1,6 +1,7 @@
 'use client';
 import React, { FC } from 'react';
-import { ChakraProvider, ColorModeScript, theme } from '@chakra-ui/react';
+import { ChakraProvider, ColorModeScript } from '@chakra-ui/react';
+import { theme } from '@/theme';
 
 /**
  * This component is a layout for the Providers, Chakra and Redux(For Future)

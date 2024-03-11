@@ -21,6 +21,7 @@ const PageLayout: FC<PageLayoutProps> = ({ children }) => {
 			minHeight: 'calc(100vh - 64px)',
 			flexDirection: 'column',
 			gap: 8,
+			bgColor: 'background',
 		},
 	};
 

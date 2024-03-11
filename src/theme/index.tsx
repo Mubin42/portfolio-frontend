@@ -8,9 +8,19 @@ const config: ThemeConfig = {
 };
 
 // 3. extend the theme
-const colors = {};
+const colors = {
+	background: '#121212',
+};
 
 const shadows = {};
+
+const components = {
+	Text: {
+		baseStyle: {
+			color: 'white',
+		},
+	},
+};
 
 // 6. Add Breakpoints
 const breakpoints = {
@@ -24,6 +34,7 @@ const breakpoints = {
 export const theme = extendTheme({
 	config,
 	colors,
+	components,
 	breakpoints,
 	shadows,
 });
