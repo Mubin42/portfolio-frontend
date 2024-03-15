@@ -4,6 +4,7 @@ import { Flex, Text } from '@chakra-ui/react';
 import React, { FC } from 'react';
 import NavbarIcon from './NavbarIcon';
 import { motion, useScroll, useTransform } from 'framer-motion';
+import { BASE_PADDING } from '@/lib/constants';
 
 const Navbar: FC = () => {
 	// hooks
@@ -48,8 +49,8 @@ const Navbar: FC = () => {
 			top={0}
 			w='100%'
 			bgColor='background'
-			px={{ base: '24px', lg: '128px' }}
-			animate={{ y: headerY }}
+			px={BASE_PADDING}
+			// animate={{ y: headerY }}
 			style={{ paddingTop: paddingY, paddingBottom: paddingY }}
 		>
 			<Flex flex={1} gap={{ base: '12px', lg: '24px' }} justify='space-between'>

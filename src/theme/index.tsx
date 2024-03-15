@@ -21,6 +21,11 @@ const components = {
 			color: 'white',
 		},
 	},
+	Heading: {
+		baseStyle: {
+			color: 'white',
+		},
+	},
 };
 
 // 6. Add Breakpoints

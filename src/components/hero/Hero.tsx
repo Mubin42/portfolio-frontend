@@ -1,15 +1,25 @@
 import React from 'react';
-import { Flex, Text } from '@chakra-ui/react';
+import { Flex, Grid, Spacer } from '@chakra-ui/react';
+import { BASE_PADDING } from '@/lib/constants';
+import ProfileImage from './ProfileImage';
+import HeroText from './HeroText';
 
 type HeroProps = {};
 
 const Hero: React.FC<HeroProps> = ({}) => {
 	return (
-		<Flex flexDir='column'>
-			<Text>This is the hero Section</Text>
-			{/* {Array.from({ length: 500 }).map((_, index) => (
-				<Text key={index}>This is the hero Section</Text>
-			))} */}
+		<Flex flexDir='column' h='100vh' px={BASE_PADDING}>
+			<Grid
+				flex={{ base: 0, lg: 1 }}
+				templateColumns={{ base: '1fr', lg: '1fr 1fr' }}
+				alignItems='center'
+				justifyItems='space-around'
+				gap={{ base: 2, lg: 8 }}
+			>
+				<Spacer hideFrom='sm' h='15vh' />
+				<ProfileImage />
+				<HeroText />
+			</Grid>
 		</Flex>
 	);
 };
