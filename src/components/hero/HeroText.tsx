@@ -11,8 +11,8 @@ const HeroText: FC<HeroTextProps> = ({}) => {
 	// states
 
 	// variables
-	const baseFontSize = { base: '24px', lg: '32px' };
-	const lgFontSize = { base: '36px', lg: '54px' };
+	const baseFontSize = { base: '16px', lg: '32px' };
+	const lgFontSize = { base: '24px', lg: '54px' };
 	const fontWeight = '500';
 	const color = 'custom-green'; // Consider using a theme value
 	const buttonSize = { base: 'sm', lg: 'lg' };

@@ -28,7 +28,7 @@ const ProfileImage: FC<ProfileImageProps> = ({}) => {
 				src={IMAGE_URL.profileImage}
 				alt='profileImage'
 				objectFit='contain'
-				height={{ base: '400px', lg: '600px' }}
+				height={{ base: '356px', lg: '600px' }}
 			/>
 		</Flex>
 	);

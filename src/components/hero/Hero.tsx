@@ -16,7 +16,7 @@ const Hero: React.FC<HeroProps> = ({}) => {
 				justifyItems='space-around'
 				gap={{ base: 2, lg: 8 }}
 			>
-				<Spacer hideFrom='sm' h='15vh' />
+				<Spacer hideFrom='sm' h='10vh' />
 				<ProfileImage />
 				<HeroText />
 			</Grid>
