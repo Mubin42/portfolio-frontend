@@ -1,4 +1,4 @@
-import { Button, Flex, Heading, Icon, Stack, Text, useTheme } from '@chakra-ui/react';
+import { Button, Flex, Heading, Icon, Stack, Text } from '@chakra-ui/react';
 import React, { FC } from 'react';
 import { FaArrowCircleDown } from 'react-icons/fa';
 import { MdCallMade } from 'react-icons/md';

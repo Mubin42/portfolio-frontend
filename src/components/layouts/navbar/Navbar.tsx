@@ -1,13 +1,15 @@
 import { navIcons } from '@/lib/sample-data/NavBarIcons';
-import { Flex, Text } from '@chakra-ui/react';
-
+import { Flex, Text, useTheme } from '@chakra-ui/react';
 import React, { FC } from 'react';
 import NavbarIcon from './NavbarIcon';
-import { motion, useScroll, useTransform } from 'framer-motion';
+import { motion, useScroll, useSpring, useTransform } from 'framer-motion';
 import { BASE_PADDING } from '@/lib/constants';
 
 const Navbar: FC = () => {
 	// hooks
+	const theme = useTheme();
+
+	const green = theme.colors['custom-green'];
 
 	// states
 
@@ -16,6 +18,13 @@ const Navbar: FC = () => {
 	const { scrollYProgress } = useScroll();
 	const headerY = useTransform(scrollYProgress, [0, 0.05], ['0%', '-100%']);
 	const paddingY = useTransform(scrollYProgress, [0, 0.05], ['24px', '8px']);
+	const widthX = useTransform(scrollYProgress, [0, 0.05], ['10px', '4px']);
+
+	const scaleX = useSpring(scrollYProgress, {
+		stiffness: 100,
+		damping: 30,
+		restDelta: 0.001,
+	});
 
 	// styles
 
@@ -24,6 +33,22 @@ const Navbar: FC = () => {
 	// effects
 
 	// components
+	const progress = (
+		<motion.div
+			className='progress-bar'
+			style={{
+				scaleX,
+				position: 'fixed',
+				top: 0,
+				left: 0,
+				right: 0,
+				height: widthX,
+				background: green,
+				transformOrigin: '0%',
+			}}
+		/>
+	);
+
 	const name = (
 		<Text
 			fontSize={{ base: '16px', lg: '24px' }}
@@ -54,6 +79,7 @@ const Navbar: FC = () => {
 			style={{ paddingTop: paddingY, paddingBottom: paddingY }}
 		>
 			<Flex flex={1} gap={{ base: '12px', lg: '24px' }} justify='space-between'>
+				{progress}
 				{name}
 				{icon}
 			</Flex>

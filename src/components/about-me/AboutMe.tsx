@@ -1,13 +1,13 @@
 import { aboutMe } from '@/cms/aboutme';
 import { BASE_PADDING } from '@/lib/constants';
-import { Button, Flex, Heading, Icon, Stack, Text } from '@chakra-ui/react';
+import { Button, Flex, Heading, Icon, Stack, StackProps, Text } from '@chakra-ui/react';
 import React, { FC } from 'react';
 import { MdOutlineFileDownload } from 'react-icons/md';
 import SectionTitle from '../ui-components/texts/SectionTitle';
 
-type AboutMeProps = {};
+type AboutMeProps = StackProps & {};
 
-const AboutMe: FC<AboutMeProps> = ({}) => {
+const AboutMe: FC<AboutMeProps> = ({ ...props }) => {
 	// hooks
 
 	// states
@@ -23,13 +23,9 @@ const AboutMe: FC<AboutMeProps> = ({}) => {
 	// components
 
 	return (
-		<Stack spacing={8} px={BASE_PADDING}>
+		<Stack spacing={8} px={BASE_PADDING} {...props}>
 			<SectionTitle>{aboutMe.title}</SectionTitle>
-			<Text
-				fontSize={{ base: '14px', lg: '24px' }}
-				w={{ base: '100%', lg: '80%' }}
-				textAlign='justify'
-			>
+			<Text fontSize={{ base: '14px', lg: '24px' }} textAlign='justify'>
 				{aboutMe.description}
 			</Text>
 			<Button
