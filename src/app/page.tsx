@@ -53,7 +53,7 @@ export default function Home() {
 					flexDirection='column'
 					overflowY='auto'
 					maxHeight='100vh'
-					gap='64px'
+					gap='128px'
 					css={hideScrollbar}
 				>
 					<Flex flex={1} ref={ref1}>

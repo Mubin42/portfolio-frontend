@@ -21,7 +21,7 @@ const SectionTitle: FC<SectionTitleProps> = ({ children, ...props }) => {
 	// components
 
 	return (
-		<Heading fontSize={{ base: '24px', lg: '64px' }} fontWeight='600' {...props}>
+		<Heading fontSize={{ base: '24px', lg: '48px' }} fontWeight='600' {...props}>
 			{children}
 		</Heading>
 	);
