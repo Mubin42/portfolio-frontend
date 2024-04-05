@@ -3,6 +3,10 @@ import { Text, TextProps } from '@chakra-ui/react';
 import { useAnimate } from 'framer-motion';
 import React, { FC, useEffect } from 'react';
 
+/**
+ * @description Currently Not in Use
+ */
+
 type ActiveTextProps = TextProps & {
 	children: React.ReactNode;
 	isActive: boolean;

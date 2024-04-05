@@ -23,7 +23,7 @@ const AboutMe: FC<AboutMeProps> = ({ ...props }) => {
 	// components
 
 	return (
-		<Stack spacing={8} px={BASE_PADDING} {...props}>
+		<Stack spacing={{ base: 4, lg: 8 }} px={BASE_PADDING} {...props}>
 			<SectionTitle>{aboutMe.title}</SectionTitle>
 			<Text fontSize={{ base: '14px', lg: '24px' }} textAlign='justify'>
 				{aboutMe.description}

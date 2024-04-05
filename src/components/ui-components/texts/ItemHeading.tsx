@@ -1,11 +1,13 @@
 import { Heading, HeadingProps } from '@chakra-ui/react';
 import React, { FC } from 'react';
 
-type SectionTitleProps = HeadingProps & {
+type ItemHeadingProps = HeadingProps & {
 	children: React.ReactNode;
 };
 
-const SectionTitle: FC<SectionTitleProps> = ({ children, ...props }) => {
+const ItemHeading: FC<ItemHeadingProps> = ({ children, ...props }) => {
+	// api
+
 	// hooks
 
 	// states
@@ -21,10 +23,10 @@ const SectionTitle: FC<SectionTitleProps> = ({ children, ...props }) => {
 	// components
 
 	return (
-		<Heading fontSize={{ base: '32px', lg: '48px' }} fontWeight='600' {...props}>
+		<Heading fontSize={{ base: '20px', lg: '36px' }} fontWeight='600' {...props}>
 			{children}
 		</Heading>
 	);
 };
 
-export default SectionTitle;
+export default ItemHeading;
