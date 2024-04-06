@@ -15,15 +15,14 @@ export default function Home() {
 	return (
 		<PageLayout>
 			<Hero />
-			{/* Not Ready For Production */}
-			{/* <Grid templateColumns='1fr' rowGap='32px'>
+			<Grid templateColumns='1fr' rowGap='32px'>
 				<AboutMe />
 				<Skills />
 				<Experiences />
 				<Skills />
 				<AboutMe />
 				<AboutMe />
-			</Grid> */}
+			</Grid>
 		</PageLayout>
 	);
 }
