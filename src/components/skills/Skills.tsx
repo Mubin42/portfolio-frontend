@@ -32,7 +32,7 @@ const Skills: FC<SkillsProps> = ({}) => {
 				{skills?.doc?.map((skill, idx) => (
 					<Stack spacing={gap}>
 						<ItemHeading key={idx}>{skill.title}</ItemHeading>
-						<Flex wrap='wrap' gap={gap}>
+						<Flex wrap='wrap' gap={gap} ml={3}>
 							{skill.tags.map((tag, index) => (
 								<SkillTags key={index}>{tag}</SkillTags>
 							))}

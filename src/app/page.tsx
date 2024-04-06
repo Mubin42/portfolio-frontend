@@ -1,5 +1,6 @@
 'use client';
 import AboutMe from '@/components/about-me/AboutMe';
+import Experiences from '@/components/experiences/Experiences';
 import Hero from '@/components/hero/Hero';
 import PageLayout from '@/components/layouts/page-layout/PageLayout';
 import Skills from '@/components/skills/Skills';
@@ -14,14 +15,15 @@ export default function Home() {
 	return (
 		<PageLayout>
 			<Hero />
-			<Grid templateColumns='1fr' overflowY='hidden' px={BASE_PADDING} rowGap='32px'>
+			{/* Not Ready For Production */}
+			{/* <Grid templateColumns='1fr' rowGap='32px'>
 				<AboutMe />
 				<Skills />
-				<AboutMe />
+				<Experiences />
 				<Skills />
 				<AboutMe />
 				<AboutMe />
-			</Grid>
+			</Grid> */}
 		</PageLayout>
 	);
 }
