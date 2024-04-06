@@ -6,6 +6,7 @@ import { BASE_PADDING } from '@/lib/constants';
 import Link from 'next/link';
 import ItemHeading from '../ui-components/texts/ItemHeading';
 import useCustomColor from '@/hooks/useCustomColor';
+import JobCard from '../cards/JobCard';
 
 type ExperiencesProps = {};
 
@@ -31,22 +32,16 @@ const Experiences: FC<ExperiencesProps> = ({}) => {
 		<Stack key={index}>
 			<Stack>
 				<Link href={experience?.company?.href}>
-					<Heading fontSize={{ base: '18px', lg: '32px' }} fontWeight='700' color={customGreen}>
+					<Heading
+						fontSize={{ base: '18px', lg: '32px' }}
+						fontWeight='700'
+						_hover={{ textDecoration: 'underline' }}
+					>
 						{experience?.company?.title}
 					</Heading>
 				</Link>
 				{experience.positions.map((position, positionIndex) => (
-					<Stack key={positionIndex} spacing={2}>
-						<Stack spacing={1}>
-							<Text>{position?.position}</Text>
-							<Text>{position?.duration}</Text>
-						</Stack>
-						<Stack spacing={1}>
-							{position?.items?.map((list, listIndex) => (
-								<Text key={listIndex}>{list}</Text>
-							))}
-						</Stack>
-					</Stack>
+					<JobCard key={positionIndex} data={position} />
 				))}
 			</Stack>
 		</Stack>
