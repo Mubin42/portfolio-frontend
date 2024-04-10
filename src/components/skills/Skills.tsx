@@ -28,8 +28,8 @@ const Skills: FC<SkillsProps> = ({}) => {
 			<SectionTitle>{skills?.title}</SectionTitle>
 			<Stack spacing={{ base: 6, lg: 8 }}>
 				{skills?.doc?.map((skill, idx) => (
-					<Stack spacing={gap}>
-						<ItemHeading key={idx}>{skill.title}</ItemHeading>
+					<Stack spacing={gap} key={idx}>
+						<ItemHeading>{skill.title}</ItemHeading>
 						<Flex wrap='wrap' gap={gap} ml={3}>
 							{skill.tags.map((tag, index) => (
 								<SkillTags key={index}>{tag}</SkillTags>
