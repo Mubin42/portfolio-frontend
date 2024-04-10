@@ -1,3 +1,4 @@
+import useCustomColor from '@/hooks/useCustomColor';
 import { Button, ButtonProps, Flex, Icon, Text } from '@chakra-ui/react';
 import React, { FC } from 'react';
 import { BsArrowUpRightCircleFill } from 'react-icons/bs';
@@ -6,6 +7,7 @@ type SendAMessageButtonProps = ButtonProps & {};
 
 const SendAMessageButton: FC<SendAMessageButtonProps> = ({ ...props }) => {
 	// hooks
+	const colors = useCustomColor();
 
 	// states
 
@@ -26,8 +28,8 @@ const SendAMessageButton: FC<SendAMessageButtonProps> = ({ ...props }) => {
 			px='14px'
 			rounded='full'
 			border='1px solid'
-			borderColor='custom-green'
-			bgColor='background'
+			borderColor={colors.customGreen}
+			bgColor={colors.darkBackground}
 			color='white'
 			_hover={{}}
 			{...props}

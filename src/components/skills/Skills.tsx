@@ -1,17 +1,15 @@
-import { BASE_PADDING } from '@/lib/constants';
-import { Flex, Stack, Tag } from '@chakra-ui/react';
+import { Flex, Stack } from '@chakra-ui/react';
 import React, { FC } from 'react';
 import SectionTitle from '../ui-components/texts/SectionTitle';
-import useCustomColor from '@/hooks/useCustomColor';
 import { skills } from '@/cms/skills';
 import SkillTags from '../ui-components/tags/SkillTags';
 import ItemHeading from '../ui-components/texts/ItemHeading';
+import Section from '../layouts/snapping/Section';
 
 type SkillsProps = {};
 
 const Skills: FC<SkillsProps> = ({}) => {
 	// hooks
-	const { customGreen } = useCustomColor();
 
 	// states
 
@@ -26,7 +24,7 @@ const Skills: FC<SkillsProps> = ({}) => {
 	// components
 
 	return (
-		<Stack spacing={{ base: 4, lg: 8 }} px={BASE_PADDING}>
+		<Section gap={{ base: 4, lg: 8 }}>
 			<SectionTitle>{skills?.title}</SectionTitle>
 			<Stack spacing={{ base: 6, lg: 8 }}>
 				{skills?.doc?.map((skill, idx) => (
@@ -40,7 +38,7 @@ const Skills: FC<SkillsProps> = ({}) => {
 					</Stack>
 				))}
 			</Stack>
-		</Stack>
+		</Section>
 	);
 };
 

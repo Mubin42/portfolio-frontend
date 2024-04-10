@@ -1,5 +1,5 @@
 'use client';
-import { extendTheme, ThemeConfig } from '@chakra-ui/react';
+import { background, extendTheme, ThemeConfig } from '@chakra-ui/react';
 
 // 2. Add color mode config
 const config: ThemeConfig = {
@@ -9,7 +9,8 @@ const config: ThemeConfig = {
 
 // 3. extend the theme
 const colors = {
-	background: '#121212',
+	background1: '#121212',
+	background2: '#1E1E1E',
 	'custom-green': '#1DB954',
 };
 

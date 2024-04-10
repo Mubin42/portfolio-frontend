@@ -3,3 +3,19 @@
 * {
 	font-family: 'Roboto Slab', serif;
 }
+
+/* width */
+::-webkit-scrollbar {
+	width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: #121212;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #1db954;
+	border-radius: 10px;
+}

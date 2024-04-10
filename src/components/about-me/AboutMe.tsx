@@ -1,15 +1,16 @@
 import { aboutMe } from '@/cms/aboutme';
-import { BASE_PADDING } from '@/lib/constants';
-import { Button, Flex, Heading, Icon, Stack, StackProps, Text } from '@chakra-ui/react';
+import { Button, Icon, Text } from '@chakra-ui/react';
 import React, { FC } from 'react';
 import { MdOutlineFileDownload } from 'react-icons/md';
 import SectionTitle from '../ui-components/texts/SectionTitle';
+import Section from '../layouts/snapping/Section';
+import useCustomColor from '@/hooks/useCustomColor';
 
-type AboutMeProps = StackProps & {};
+type AboutMeProps = {};
 
-const AboutMe: FC<AboutMeProps> = ({ ...props }) => {
+const AboutMe: FC<AboutMeProps> = ({}) => {
 	// hooks
-
+	const { lightBackground } = useCustomColor();
 	// states
 
 	// variables
@@ -23,7 +24,7 @@ const AboutMe: FC<AboutMeProps> = ({ ...props }) => {
 	// components
 
 	return (
-		<Stack spacing={{ base: 4, lg: 8 }} px={BASE_PADDING} {...props}>
+		<Section gap={{ base: 4, lg: 8 }} bgColor={lightBackground}>
 			<SectionTitle>{aboutMe.title}</SectionTitle>
 			<Text fontSize={{ base: '14px', lg: '24px' }} textAlign='justify'>
 				{aboutMe.description}
@@ -37,7 +38,7 @@ const AboutMe: FC<AboutMeProps> = ({ ...props }) => {
 			>
 				Download my resume
 			</Button>
-		</Stack>
+		</Section>
 	);
 };
 

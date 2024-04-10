@@ -2,6 +2,8 @@ import { Button, Flex, Heading, Icon, Stack, Text } from '@chakra-ui/react';
 import React, { FC } from 'react';
 import { FaArrowCircleDown } from 'react-icons/fa';
 import { MdCallMade } from 'react-icons/md';
+import ViewProjectsButton from '../ui-components/buttons/ViewProjectsButton';
+import ContactMeButton from '../ui-components/buttons/ContactMeButton';
 
 type HeroTextProps = {};
 
@@ -35,18 +37,8 @@ const HeroText: FC<HeroTextProps> = ({}) => {
 				A Software Engineer
 			</Heading>
 			<Flex gap={4} py={{ base: 2, lg: 4 }}>
-				<Button
-					size={buttonSize}
-					borderRadius='20px'
-					bgColor={color}
-					color='black'
-					rightIcon={<Icon as={FaArrowCircleDown} />}
-				>
-					View Projects
-				</Button>
-				<Button variant='link' size={buttonSize} color='white' rightIcon={<Icon as={MdCallMade} />}>
-					View Projects
-				</Button>
+				<ViewProjectsButton />
+				<ContactMeButton />
 			</Flex>
 		</Stack>
 	);

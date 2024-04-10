@@ -41,11 +41,13 @@ const JobCard: FC<JobCardProps> = ({ data, ...props }) => {
 					{data?.duration}
 				</Text>
 			</Stack>
-			<List>
+			<List listStylePosition='outside'>
 				{data?.items?.map((list, listIndex) => (
 					<ListItem key={listIndex} color='whitesmoke' fontSize={{ base: '12px', lg: '16px' }}>
-						<ListIcon as={ChevronRightIcon} color='green.500' />
-						{list}
+						<Flex>
+							<ListIcon as={ChevronRightIcon} color='green.500' />
+							{list}
+						</Flex>
 					</ListItem>
 				))}
 			</List>

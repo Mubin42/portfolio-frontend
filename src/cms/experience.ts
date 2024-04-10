@@ -3,41 +3,25 @@ export const experiences = {
 	doc: [
 		{
 			company: {
-				title: 'thinkcrypt.io',
+				title: 'Thinkcrypt.io',
 				href: 'https://thinkcrypt.io',
 			},
 			positions: [
 				{
 					position: 'Software Engineer',
-					duration: 'May 2021 - Present',
+					duration: 'Feb 2024 - Present',
+					location: 'Dhaka, BD',
 					items: [
-						'Developed a web application for the company using Next.js, Chakra UI, and Framer Motion.',
-						'Implemented a RESTful API using Node.js and Express.js.',
-						'Designed and developed the database using MongoDB.',
-						'Implemented CI/CD using GitHub Actions.',
-						'Followed Agile and Scrum methodologies for project management.',
+						'Accountable for developing, deploying, and maintaining web applications as well as improving the company coding rulebook and ethics.',
+						'Worked developing single and Multi-vendor E-commerce applications, flight, and ticketing, POS and inventory management, CMS and ERP systems.',
 					],
 				},
 				{
 					position: 'Jr. Software Engineer',
-					duration: 'May 2021 - Present',
+					duration: 'Jun 2023 - Jan 2024',
 					items: [
-						'Developed a web application for the company using Next.js, Chakra UI, and Framer Motion.',
-						'Implemented a RESTful API using Node.js and Express.js.',
-						'Designed and developed the database using MongoDB.',
-						'Implemented CI/CD using GitHub Actions.',
-						'Followed Agile and Scrum methodologies for project management.',
-					],
-				},
-				{
-					position: 'Intern',
-					duration: 'May 2021 - Present',
-					items: [
-						'Developed a web application for the company using Next.js, Chakra UI, and Framer Motion.',
-						'Implemented a RESTful API using Node.js and Express.js.',
-						'Designed and developed the database using MongoDB.',
-						'Implemented CI/CD using GitHub Actions.',
-						'Followed Agile and Scrum methodologies for project management.',
+						'Develop both frontend and backend aspects of web applications using Next.js and Express.js.',
+						'Work on diverse features, including improving and extending existing codebases, and undertaking new project development from inception.',
 					],
 				},
 			],
@@ -45,18 +29,16 @@ export const experiences = {
 		{
 			company: {
 				title: 'happycoders.io',
-				href: 'https://thinkcrypt.io',
+				href: 'https://happycoders.io',
 			},
 			positions: [
 				{
-					position: 'Coding Instructor',
-					duration: 'May 2021 - Present',
+					position: 'Coding Instructor (Part-Time)',
+					duration: 'Jun 2022 - Present',
+					location: 'Dhaka, BD',
 					items: [
-						'Taught students how to code using Python and JavaScript.',
-						'Helped students with their coding projects.',
-						'Assisted students in debugging their code.',
-						'Guided students in building their own projects.',
-						'Conducted coding workshops for students.',
+						'Teach Python and Scratch Programming, fostering a strong foundation in programming concepts to k2-k12 students.',
+						'Taught over 100+ students',
 					],
 				},
 			],

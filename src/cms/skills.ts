@@ -2,20 +2,32 @@ export const skills = {
 	title: 'Skills',
 	doc: [
 		{
-			title: 'Frontend Development',
-			tags: ['React.js', 'Next.js', 'Chakra UI', 'Framer Motion', 'Redux'],
-		},
-		{
 			title: 'Backend Development',
-			tags: ['Node.js', 'Express.js', 'MongoDB', 'Joi', 'RESTful APIs'],
+			tags: ['TypeScript', 'JavaScript', 'Node.js', 'Express.js', 'JWT'],
 		},
 		{
-			title: 'Languages',
-			tags: ['JavaScript', 'TypeScript', 'Python'],
+			title: 'Frontend Development',
+			tags: ['React.js', 'Next.js', 'Redux & RTK Query', 'Chakra UI', 'Unstyled CSS'],
 		},
 		{
-			title: 'Others',
-			tags: ['Git', 'GitHub', 'CI/CD', 'Agile', 'Scrum'],
+			title: 'Tools',
+			tags: ['Vercel', 'Git', 'GitHub', 'Heroku', 'NPM', 'AWS S3'],
+		},
+		{
+			title: 'Databases',
+			tags: ['mongoDB', 'MySQL'],
+		},
+		{
+			title: 'Miscellaneous',
+			tags: [
+				'Data Structures',
+				'Algorithms',
+				'OOP',
+				'Functional Programming',
+				'Computer Vision',
+				'Teaching',
+				'MVC',
+			],
 		},
 	],
 };

@@ -4,12 +4,12 @@ import React, { FC } from 'react';
 import NavbarIcon from './NavbarIcon';
 import { motion, useScroll, useSpring, useTransform } from 'framer-motion';
 import { BASE_PADDING } from '@/lib/constants';
+import useCustomColor from '@/hooks/useCustomColor';
 
 const Navbar: FC = () => {
 	// hooks
-	const theme = useTheme();
 
-	const green = theme.colors['custom-green'];
+	const { darkBackground, customGreen } = useCustomColor();
 
 	// states
 
@@ -43,7 +43,7 @@ const Navbar: FC = () => {
 				left: 0,
 				right: 0,
 				height: widthX,
-				background: green,
+				background: customGreen,
 				transformOrigin: '0%',
 			}}
 		/>
@@ -73,7 +73,7 @@ const Navbar: FC = () => {
 			position='fixed'
 			top={0}
 			w='100%'
-			bgColor='background'
+			bgColor={darkBackground}
 			px={BASE_PADDING}
 			// animate={{ y: headerY }}
 			style={{ paddingTop: paddingY, paddingBottom: paddingY }}

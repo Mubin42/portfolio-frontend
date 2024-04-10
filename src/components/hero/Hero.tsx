@@ -1,14 +1,14 @@
 import React from 'react';
-import { Flex, FlexProps, Grid, Spacer } from '@chakra-ui/react';
-import { BASE_PADDING } from '@/lib/constants';
+import { Grid, Spacer } from '@chakra-ui/react';
 import ProfileImage from './ProfileImage';
 import HeroText from './HeroText';
+import Section from '../layouts/snapping/Section';
 
-type HeroProps = FlexProps & {};
+type HeroProps = {};
 
-const Hero: React.FC<HeroProps> = ({ ...props }) => {
+const Hero: React.FC<HeroProps> = () => {
 	return (
-		<Flex flexDir='column' h='100vh' px={BASE_PADDING} {...props}>
+		<Section>
 			<Grid
 				flex={{ base: 0, lg: 1 }}
 				templateColumns={{ base: '1fr', lg: '1fr 1fr' }}
@@ -20,7 +20,7 @@ const Hero: React.FC<HeroProps> = ({ ...props }) => {
 				<ProfileImage />
 				<HeroText />
 			</Grid>
-		</Flex>
+		</Section>
 	);
 };
 

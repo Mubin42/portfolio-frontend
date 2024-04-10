@@ -1,12 +1,11 @@
-import { Heading, Stack, Text } from '@chakra-ui/react';
+import { Grid, Heading, Stack, Text } from '@chakra-ui/react';
 import React, { FC } from 'react';
 import SectionTitle from '../ui-components/texts/SectionTitle';
 import { experiences } from '@/cms/experience';
-import { BASE_PADDING } from '@/lib/constants';
 import Link from 'next/link';
-import ItemHeading from '../ui-components/texts/ItemHeading';
 import useCustomColor from '@/hooks/useCustomColor';
 import JobCard from '../cards/JobCard';
+import Section from '../layouts/snapping/Section';
 
 type ExperiencesProps = {};
 
@@ -14,7 +13,7 @@ const Experiences: FC<ExperiencesProps> = ({}) => {
 	// api
 
 	// hooks
-	const { customGreen } = useCustomColor();
+	const { lightBackground } = useCustomColor();
 
 	// states
 
@@ -31,7 +30,7 @@ const Experiences: FC<ExperiencesProps> = ({}) => {
 	const jobs = experiences?.doc?.map((experience, index) => (
 		<Stack key={index}>
 			<Stack>
-				<Link href={experience?.company?.href}>
+				<Link href={experience?.company?.href} target='_blank'>
 					<Heading
 						fontSize={{ base: '18px', lg: '32px' }}
 						fontWeight='700'
@@ -48,10 +47,12 @@ const Experiences: FC<ExperiencesProps> = ({}) => {
 	));
 
 	return (
-		<Stack spacing={{ base: 4, lg: 8 }} px={BASE_PADDING}>
+		<Section gap={{ base: 4, lg: 8 }} bgColor={lightBackground}>
 			<SectionTitle>{experiences.title}</SectionTitle>
-			<Stack spacing={{ base: 6, lg: 8 }}>{jobs}</Stack>
-		</Stack>
+			<Grid templateColumns={{ base: '1fr', lg: '2fr 2fr' }} gap={{ base: 6, lg: 8 }}>
+				{jobs}
+			</Grid>
+		</Section>
 	);
 };
 

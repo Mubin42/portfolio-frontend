@@ -25,7 +25,7 @@ const NavbarIcon: FC<NavbarIconProps> = ({ data, ...props }) => {
 	// components
 
 	return (
-		<Link href={data.href}>
+		<Link href={data.href} target='_blank'>
 			<Flex
 				as={motion.div}
 				align='center'
