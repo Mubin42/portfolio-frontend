@@ -1,9 +1,8 @@
-import { Button, Flex, Heading, Icon, Stack, Text } from '@chakra-ui/react';
+import { Flex, Heading, Stack, Text } from '@chakra-ui/react';
 import React, { FC } from 'react';
-import { FaArrowCircleDown } from 'react-icons/fa';
-import { MdCallMade } from 'react-icons/md';
 import ViewProjectsButton from '../ui-components/buttons/ViewProjectsButton';
 import ContactMeButton from '../ui-components/buttons/ContactMeButton';
+import { notFound } from 'next/navigation';
 
 type HeroTextProps = {};
 
@@ -23,6 +22,10 @@ const HeroText: FC<HeroTextProps> = ({}) => {
 
 	// functions
 
+	const handleNotFound = () => {
+		notFound();
+	};
+
 	// effects
 
 	// components
@@ -37,8 +40,8 @@ const HeroText: FC<HeroTextProps> = ({}) => {
 				A Software Engineer
 			</Heading>
 			<Flex gap={4} py={{ base: 2, lg: 4 }}>
-				<ViewProjectsButton />
-				<ContactMeButton />
+				<ViewProjectsButton onClick={handleNotFound} />
+				<ContactMeButton onClick={handleNotFound} />
 			</Flex>
 		</Stack>
 	);

@@ -4,3 +4,7 @@ export const IMAGE_URL = {
 	profileImage: '/images/profileImage.jpg',
 	footerImage: '/images/footerImage.png',
 };
+
+export const Z_INDEX = {
+	navbar: 80,
+};

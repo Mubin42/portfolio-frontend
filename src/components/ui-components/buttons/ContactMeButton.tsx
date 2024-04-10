@@ -1,4 +1,5 @@
 import { Button, ButtonProps, Icon } from '@chakra-ui/react';
+import Link from 'next/link';
 import React, { FC } from 'react';
 import { MdCallMade } from 'react-icons/md';
 
@@ -23,9 +24,11 @@ const ContactMeButton: FC<ContactMeButtonProps> = ({}) => {
 	// components
 
 	return (
-		<Button variant='link' size={buttonSize} color='white' rightIcon={<Icon as={MdCallMade} />}>
-			View Projects
-		</Button>
+		<Link href='/not-implemented'>
+			<Button variant='link' size={buttonSize} color='white' rightIcon={<Icon as={MdCallMade} />}>
+				View Projects
+			</Button>
+		</Link>
 	);
 };
 

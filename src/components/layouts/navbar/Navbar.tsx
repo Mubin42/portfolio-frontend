@@ -3,8 +3,9 @@ import { Flex, Text, useTheme } from '@chakra-ui/react';
 import React, { FC } from 'react';
 import NavbarIcon from './NavbarIcon';
 import { motion, useScroll, useSpring, useTransform } from 'framer-motion';
-import { BASE_PADDING } from '@/lib/constants';
+import { BASE_PADDING, Z_INDEX } from '@/lib/constants';
 import useCustomColor from '@/hooks/useCustomColor';
+import Link from 'next/link';
 
 const Navbar: FC = () => {
 	// hooks
@@ -50,13 +51,15 @@ const Navbar: FC = () => {
 	);
 
 	const name = (
-		<Text
-			fontSize={{ base: '16px', lg: '24px' }}
-			fontWeight='700'
-			_selection={{ color: 'custom-green' }}
-		>
-			Kazi Ehsanul Mubin
-		</Text>
+		<Link href='/'>
+			<Text
+				fontSize={{ base: '16px', lg: '24px' }}
+				fontWeight='700'
+				_selection={{ color: 'custom-green' }}
+			>
+				Kazi Ehsanul Mubin
+			</Text>
+		</Link>
 	);
 
 	const icon = (
@@ -77,6 +80,7 @@ const Navbar: FC = () => {
 			px={BASE_PADDING}
 			// animate={{ y: headerY }}
 			style={{ paddingTop: paddingY, paddingBottom: paddingY }}
+			zIndex={Z_INDEX.navbar}
 		>
 			<Flex flex={1} gap={{ base: '12px', lg: '24px' }} justify='space-between'>
 				{progress}
