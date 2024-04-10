@@ -26,7 +26,8 @@ const Section: FC<SectionProps> = ({ children, bgColor, ...props }) => {
 
 	return (
 		<Flex
-			w='full'
+			w='auto'
+			py={{ base: 4, lg: 8 }}
 			minH='100vh'
 			justify='center'
 			align='center'

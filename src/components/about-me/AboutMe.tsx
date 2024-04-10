@@ -1,16 +1,23 @@
 import { aboutMe } from '@/cms/aboutme';
 import { Button, Icon, Text } from '@chakra-ui/react';
-import React, { FC } from 'react';
+import React, { FC, useEffect, useRef } from 'react';
 import { MdOutlineFileDownload } from 'react-icons/md';
 import SectionTitle from '../ui-components/texts/SectionTitle';
 import Section from '../layouts/snapping/Section';
 import useCustomColor from '@/hooks/useCustomColor';
+import { motion, useScroll } from 'framer-motion';
+import Paragraph from './Paragraph';
 
 type AboutMeProps = {};
 
 const AboutMe: FC<AboutMeProps> = ({}) => {
 	// hooks
 	const { lightBackground } = useCustomColor();
+	const descriptionRef = useRef(null);
+	const { scrollYProgress } = useScroll({
+		target: descriptionRef,
+		offset: ['start 0.9', 'start 0.25'],
+	});
 	// states
 
 	// variables
@@ -26,9 +33,8 @@ const AboutMe: FC<AboutMeProps> = ({}) => {
 	return (
 		<Section gap={{ base: 4, lg: 8 }} bgColor={lightBackground}>
 			<SectionTitle>{aboutMe.title}</SectionTitle>
-			<Text fontSize={{ base: '14px', lg: '24px' }} textAlign='justify'>
-				{aboutMe.description}
-			</Text>
+
+			<Paragraph value={aboutMe.description} />
 			<Button
 				bgColor='custom-green'
 				color='black'
