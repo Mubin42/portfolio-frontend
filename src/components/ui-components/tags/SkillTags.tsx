@@ -34,7 +34,7 @@ const SkillTags: FC<SkillTagsProps> = ({ children, ...props }) => {
 			color='white'
 			border='1px solid'
 			borderColor={customGreen}
-			_hover={isDesktop ? { bgColor: customGreen, color: 'black' } : {}}
+			// _hover={isDesktop ? { bgColor: customGreen, color: 'black' } : {}}
 			transition={'all 0.3s ease'}
 			{...props}
 		>

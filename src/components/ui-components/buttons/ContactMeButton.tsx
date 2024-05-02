@@ -24,9 +24,9 @@ const ContactMeButton: FC<ContactMeButtonProps> = ({}) => {
 	// components
 
 	return (
-		<Link href='/not-implemented'>
+		<Link href='#footer'>
 			<Button variant='link' size={buttonSize} color='white' rightIcon={<Icon as={MdCallMade} />}>
-				View Projects
+				Contact Me
 			</Button>
 		</Link>
 	);

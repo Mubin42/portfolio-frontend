@@ -3,6 +3,7 @@ import AboutMe from '@/components/about-me/AboutMe';
 import Experiences from '@/components/experiences/Experiences';
 import Hero from '@/components/hero/Hero';
 import PageLayout from '@/components/layouts/page-layout/PageLayout';
+import Projects from '@/components/projects/Projects';
 import Skills from '@/components/skills/Skills';
 
 /**
@@ -16,6 +17,7 @@ export default function Home() {
 			<AboutMe />
 			<Skills />
 			<Experiences />
+			<Projects />
 		</PageLayout>
 	);
 }

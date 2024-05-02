@@ -27,6 +27,7 @@ const Footer: FC<FooterProps> = ({}) => {
 			backgroundSize='cover'
 			backgroundRepeat='no-repeat'
 			py='32px'
+			id='footer'
 		>
 			<Center flexDirection='column' flex={1} gap={{ base: '32px', lg: '64px' }} pt='32px'>
 				<Stack align='center' spacing={-2}>

@@ -13,11 +13,7 @@ type AboutMeProps = {};
 const AboutMe: FC<AboutMeProps> = ({}) => {
 	// hooks
 	const { lightBackground } = useCustomColor();
-	const descriptionRef = useRef(null);
-	const { scrollYProgress } = useScroll({
-		target: descriptionRef,
-		offset: ['start 0.9', 'start 0.25'],
-	});
+
 	// states
 
 	// variables

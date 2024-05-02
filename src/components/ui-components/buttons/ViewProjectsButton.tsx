@@ -26,7 +26,7 @@ const ViewProjectsButton: FC<ViewProjectsButtonProps> = ({}) => {
 	// components
 
 	return (
-		<Link href='not-implemented'>
+		<Link href='#projects'>
 			<Button
 				size={buttonSize}
 				borderRadius='20px'
