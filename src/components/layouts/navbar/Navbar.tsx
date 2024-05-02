@@ -52,13 +52,16 @@ const Navbar: FC = () => {
 
 	const name = (
 		<Link href='/'>
-			<Text
+			<Flex
 				fontSize={{ base: '16px', lg: '24px' }}
 				fontWeight='700'
 				_selection={{ color: 'custom-green' }}
+				gap={4}
+				align='center'
 			>
-				Kazi Ehsanul Mubin
-			</Text>
+				<Text color={customGreen} fontWeight='800'>{`< />`}</Text>
+				<Text>Kazi Ehsanul Mubin</Text>
+			</Flex>
 		</Link>
 	);
 
@@ -76,9 +79,9 @@ const Navbar: FC = () => {
 			position='fixed'
 			top={0}
 			w='100%'
-			bgColor={darkBackground}
+			bg='rgba(0, 0, 0, 0.5)'
+			backdropFilter='blur(16px)'
 			px={BASE_PADDING}
-			// animate={{ y: headerY }}
 			style={{ paddingTop: paddingY, paddingBottom: paddingY }}
 			zIndex={Z_INDEX.navbar}
 		>
