@@ -40,6 +40,11 @@ const ProjectCard: FC<ProjectCardProps> = ({ data }) => {
 			gap={{ base: 4, lg: 8 }}
 			borderRadius={16}
 			p={4}
+			_hover={{
+				bgColor: lightBackground,
+				transform: 'scale(1.02)',
+				transition: 'all 0.3s ease-in-out',
+			}}
 		>
 			<Stack>
 				<Text fontSize={{ base: '16px', lg: '24px' }} color={customGreen}>
