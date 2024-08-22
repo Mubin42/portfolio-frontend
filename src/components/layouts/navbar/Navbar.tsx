@@ -6,6 +6,7 @@ import { motion, useScroll, useSpring, useTransform } from 'framer-motion';
 import { BASE_PADDING, Z_INDEX } from '@/lib/constants';
 import useCustomColor from '@/hooks/useCustomColor';
 import Link from 'next/link';
+import CustomColorMenu from '@/components/ui-components/menus/CustomColorMenu';
 
 const Navbar: FC = () => {
 	// hooks
@@ -56,10 +57,10 @@ const Navbar: FC = () => {
 				fontSize={{ base: '16px', lg: '24px' }}
 				fontWeight='700'
 				_selection={{ color: 'custom-green' }}
-				gap={4}
+				gap={{ base: 1, lg: 4 }}
 				align='center'
 			>
-				<Text color={customGreen} fontWeight='800'>{`< />`}</Text>
+				{/* <Text hideBelow='lg' color={customGreen} fontWeight='800'>{`< />`}</Text> */}
 				<Text>Kazi Ehsanul Mubin</Text>
 			</Flex>
 		</Link>
@@ -67,6 +68,7 @@ const Navbar: FC = () => {
 
 	const icon = (
 		<Flex align='center' gap={{ base: '12px', lg: '18px' }}>
+			<CustomColorMenu />
 			{navIcons?.map((icon, index) => (
 				<NavbarIcon key={index} data={icon} />
 			))}
