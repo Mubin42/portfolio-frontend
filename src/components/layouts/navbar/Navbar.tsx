@@ -60,7 +60,7 @@ const Navbar: FC = () => {
 				gap={{ base: 1, lg: 4 }}
 				align='center'
 			>
-				{/* <Text hideBelow='lg' color={customGreen} fontWeight='800'>{`< />`}</Text> */}
+				<Text hideBelow='lg' color={customGreen} fontWeight='800'>{`< />`}</Text>
 				<Text>Kazi Ehsanul Mubin</Text>
 			</Flex>
 		</Link>
@@ -68,7 +68,7 @@ const Navbar: FC = () => {
 
 	const icon = (
 		<Flex align='center' gap={{ base: '12px', lg: '18px' }}>
-			<CustomColorMenu />
+			{/* <CustomColorMenu /> */}
 			{navIcons?.map((icon, index) => (
 				<NavbarIcon key={index} data={icon} />
 			))}

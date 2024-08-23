@@ -16,6 +16,16 @@ const CustomColorMenu: FC<CustomColorMenuProps> = ({}) => {
 	// variables
 
 	// styles
+	const style = {
+		menuItem: {
+			bg: lightBackground,
+			color: 'white',
+			gap: 2,
+			_hover: {
+				bg: darkBackground,
+			},
+		},
+	};
 
 	// functions
 
@@ -27,6 +37,7 @@ const CustomColorMenu: FC<CustomColorMenuProps> = ({}) => {
 		<Menu>
 			<MenuButton
 				as={Button}
+				size='sm'
 				rightIcon={<ChevronDownIcon color='white' />}
 				bg={lightBackground}
 				_hover={{
@@ -36,29 +47,24 @@ const CustomColorMenu: FC<CustomColorMenuProps> = ({}) => {
 					bg: 'transparent',
 				}}
 			>
-				<Flex boxSize={4} bgColor='custom-green' borderRadius='full'></Flex>
+				<Flex boxSize={4} bgColor='custom-green' borderRadius='full' />
 			</MenuButton>
 			<MenuList bg={lightBackground} border={lightBackground}>
-				<MenuItem bg={lightBackground} color='white'>
-					Download
+				<MenuItem sx={style.menuItem}>
+					<Flex boxSize={4} bgColor='red' borderRadius='full' />
+					Red
 				</MenuItem>
-				<MenuItem
-					bg={lightBackground}
-					color='white'
-					_hover={{
-						bg: darkBackground,
-					}}
-				>
-					Create a Copy
+				<MenuItem sx={style.menuItem}>
+					<Flex boxSize={4} bgColor='orange' borderRadius='full' />
+					Orange
 				</MenuItem>
-				<MenuItem bg={lightBackground} color='white'>
-					Mark as Draft
+				<MenuItem sx={style.menuItem}>
+					<Flex boxSize={4} bgColor='blue' borderRadius='full' />
+					Blue
 				</MenuItem>
-				<MenuItem bg={lightBackground} color='white'>
-					Delete
-				</MenuItem>
-				<MenuItem bg={lightBackground} color='white'>
-					Attend a Workshop
+				<MenuItem sx={style.menuItem}>
+					<Flex boxSize={4} bgColor='cyan' borderRadius='full' />
+					Cyan
 				</MenuItem>
 			</MenuList>
 		</Menu>
