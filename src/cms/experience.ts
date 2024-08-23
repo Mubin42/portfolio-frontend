@@ -3,13 +3,31 @@ export const experiences = {
 	doc: [
 		{
 			company: {
+				title: 'Zolo Inc',
+				href: 'https://www.linkedin.com/company/zoloinc/',
+			},
+			positions: [
+				{
+					position: 'Software Engineer',
+					duration: 'June 2024 - Present',
+					location: 'Dhaka, BD',
+					items: [
+						'Design and implement new features for both frontend and backend, including API creation and database management.',
+						'Ensure seamless integration between backend services and frontend UI, while maintaining code quality and performance.',
+					],
+				},
+			],
+		},
+		,
+		{
+			company: {
 				title: 'Thinkcrypt.io',
 				href: 'https://thinkcrypt.io',
 			},
 			positions: [
 				{
 					position: 'Software Engineer',
-					duration: 'Feb 2024 - Present',
+					duration: 'Feb 2024 - May 2024',
 					location: 'Dhaka, BD',
 					items: [
 						'Accountable for developing, deploying, and maintaining web applications as well as improving the company coding rulebook and ethics.',

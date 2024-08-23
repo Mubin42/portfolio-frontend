@@ -3,11 +3,11 @@ export const skills = {
 	doc: [
 		{
 			title: 'Backend Development',
-			tags: ['TypeScript', 'JavaScript', 'Node.js', 'Express.js', 'JWT'],
+			tags: ['TypeScript', 'JavaScript', 'NestJs', 'Node.js', 'Express.js', 'JWT'],
 		},
 		{
 			title: 'Frontend Development',
-			tags: ['React.js', 'Next.js', 'Redux & RTK Query', 'Chakra UI', 'Unstyled CSS'],
+			tags: ['React.js', 'Next.js', 'Redux & RTK Query', 'Chakra UI', 'Tailwind & Shade/cn'],
 		},
 		{
 			title: 'Tools',
@@ -15,7 +15,7 @@ export const skills = {
 		},
 		{
 			title: 'Databases',
-			tags: ['mongoDB', 'MySQL'],
+			tags: ['mongoDB', 'MySQL', 'PostgreSQL & Prisma'],
 		},
 		{
 			title: 'Miscellaneous',

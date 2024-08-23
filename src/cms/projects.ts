@@ -2,6 +2,13 @@ const projects = {
 	title: 'Projects',
 	doc: [
 		{
+			title: 'Dokan - E-commerce Platform',
+			description: `A SaaS e-commerce platform built with Nest.js, Next.js and Shade/cn. The platform features shopify-like functionalities such as multi-vendor support, product management, order management, and more. With a unified backend systems stores would be able to subscribe to the platform and start selling their products online.`,
+			techStack: ['Nest.js', 'Next.js', 'MongoDB and Mongoose', 'Shade/cn'],
+			image: '/projects/dokan-admin.png',
+			link: 'https://github.com/Mubin42/dokan-backend.git',
+		},
+		{
 			title: 'Bazar365.com',
 			description: `A full-stack e-commerce web application with a focus on user experience and performance. The application is built with Next.js, Chakra UI, and Redux Toolkit. It features a responsive design, support for dark mode and fluid animations.`,
 			techStack: ['Next.js', 'Redux Toolkit', 'Chakra UI', 'Framer Motion'],
@@ -22,13 +29,6 @@ const projects = {
 			image: '/projects/happycoders.png',
 			link: 'https://happycoders-v2.vercel.app/',
 		},
-		// {
-		// 	title: 'Notes App',
-		// 	description: `A notes application built with React and Chakra UI. The application allows users to create, read, update, and delete notes.`,
-		// 	techStack: ['React', 'Chakra UI'],
-		// 	image: 'https://cdn.pixabay.com/photo/2019/04/04/15/17/smartphone-4103051_960_720.jpg',
-		// 	link: 'https://notes-app-kazi.netlify.app/',
-		// },
 	],
 };
 
