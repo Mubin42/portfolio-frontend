@@ -1,4 +1,20 @@
-export const experiences = {
+type Experiences = {
+	title: string;
+	doc: {
+		company: {
+			title: string;
+			href: string;
+		};
+		positions: {
+			position: string;
+			duration: string;
+			location?: string;
+			items: string[];
+		}[];
+	}[];
+};
+
+export const experiences: Experiences = {
 	title: 'Experience',
 	doc: [
 		{
@@ -18,7 +34,6 @@ export const experiences = {
 				},
 			],
 		},
-		,
 		{
 			company: {
 				title: 'Thinkcrypt.io',
