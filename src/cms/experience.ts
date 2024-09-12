@@ -36,6 +36,23 @@ export const experiences: Experiences = {
 		},
 		{
 			company: {
+				title: 'happycoders.io',
+				href: 'https://happycoders.io',
+			},
+			positions: [
+				{
+					position: 'Coding Instructor (Part-Time)',
+					duration: 'Jun 2022 - Present',
+					location: 'Dhaka, BD',
+					items: [
+						'Teach Python and Scratch Programming, fostering a strong foundation in programming concepts to k2-k12 students.',
+						'Taught over 100+ students',
+					],
+				},
+			],
+		},
+		{
+			company: {
 				title: 'Thinkcrypt.io',
 				href: 'https://thinkcrypt.io',
 			},
@@ -55,23 +72,6 @@ export const experiences: Experiences = {
 					items: [
 						'Develop both frontend and backend aspects of web applications using Next.js and Express.js.',
 						'Work on diverse features, including improving and extending existing codebases, and undertaking new project development from inception.',
-					],
-				},
-			],
-		},
-		{
-			company: {
-				title: 'happycoders.io',
-				href: 'https://happycoders.io',
-			},
-			positions: [
-				{
-					position: 'Coding Instructor (Part-Time)',
-					duration: 'Jun 2022 - Present',
-					location: 'Dhaka, BD',
-					items: [
-						'Teach Python and Scratch Programming, fostering a strong foundation in programming concepts to k2-k12 students.',
-						'Taught over 100+ students',
 					],
 				},
 			],

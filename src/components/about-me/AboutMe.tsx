@@ -1,11 +1,10 @@
 import { aboutMe } from '@/cms/aboutme';
-import { Button, Icon, Text } from '@chakra-ui/react';
-import React, { FC, useEffect, useRef } from 'react';
-import { MdOutlineFileDownload } from 'react-icons/md';
-import SectionTitle from '../ui-components/texts/SectionTitle';
-import Section from '../layouts/snapping/Section';
 import useCustomColor from '@/hooks/useCustomColor';
-import { motion, useScroll } from 'framer-motion';
+import { Button, Icon } from '@chakra-ui/react';
+import { FC } from 'react';
+import { MdOutlineFileDownload } from 'react-icons/md';
+import Section from '../layouts/snapping/Section';
+import SectionTitle from '../ui-components/texts/SectionTitle';
 import Paragraph from './Paragraph';
 
 type AboutMeProps = {};

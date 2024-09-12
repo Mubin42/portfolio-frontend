@@ -1,12 +1,11 @@
-import { navIcons } from '@/lib/sample-data/NavBarIcons';
-import { Flex, Text, useTheme } from '@chakra-ui/react';
-import React, { FC } from 'react';
-import NavbarIcon from './NavbarIcon';
-import { motion, useScroll, useSpring, useTransform } from 'framer-motion';
-import { BASE_PADDING, Z_INDEX } from '@/lib/constants';
 import useCustomColor from '@/hooks/useCustomColor';
+import { BASE_PADDING, Z_INDEX } from '@/lib/constants';
+import { navIcons } from '@/lib/sample-data/NavBarIcons';
+import { Flex, Text } from '@chakra-ui/react';
+import { motion, useScroll, useSpring, useTransform } from 'framer-motion';
 import Link from 'next/link';
-import CustomColorMenu from '@/components/ui-components/menus/CustomColorMenu';
+import { FC } from 'react';
+import NavbarIcon from './NavbarIcon';
 
 const Navbar: FC = () => {
 	// hooks

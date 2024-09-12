@@ -1,5 +1,5 @@
-import { MotionValue, useTransform, motion } from 'framer-motion';
-import { FC, useEffect } from 'react';
+import { motion, MotionValue, useTransform } from 'framer-motion';
+import { FC } from 'react';
 
 type WordType = {
 	children: string;

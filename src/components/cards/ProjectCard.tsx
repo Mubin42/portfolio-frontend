@@ -1,8 +1,6 @@
 import useCustomColor from '@/hooks/useCustomColor';
-import { Button, Flex, Grid, Icon, Image, Stack, Tag, Text } from '@chakra-ui/react';
-import Link from 'next/link';
-import React, { FC } from 'react';
-import { MdCallMade } from 'react-icons/md';
+import { Flex, Grid, Image, Stack, Tag, Text } from '@chakra-ui/react';
+import { FC } from 'react';
 
 type ProjectCardProps = {
 	data: {

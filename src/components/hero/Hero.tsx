@@ -1,8 +1,8 @@
+import { Grid } from '@chakra-ui/react';
 import React from 'react';
-import { Grid, Spacer } from '@chakra-ui/react';
-import ProfileImage from './ProfileImage';
-import HeroText from './HeroText';
 import Section from '../layouts/snapping/Section';
+import HeroText from './HeroText';
+import ProfileImage from './ProfileImage';
 
 type HeroProps = {};
 

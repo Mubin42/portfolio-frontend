@@ -1,6 +1,6 @@
 import { Text } from '@chakra-ui/react';
-import React, { FC, useEffect, useRef } from 'react';
 import { useScroll } from 'framer-motion';
+import { FC, useRef } from 'react';
 import Word from './Word';
 
 type ParagraphProps = {

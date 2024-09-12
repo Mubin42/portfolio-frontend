@@ -1,9 +1,9 @@
 import CustomTooltip from '@/components/ui-components/tooltip/CustomTooltip';
 import { NavIconsType } from '@/lib/sample-data/NavBarIcons';
-import { Flex, Icon, IconProps, Tooltip } from '@chakra-ui/react';
+import { Flex, Icon, IconProps } from '@chakra-ui/react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
-import React, { FC } from 'react';
+import { FC } from 'react';
 
 type NavbarIconProps = IconProps & {
 	data: NavIconsType;

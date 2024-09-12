@@ -1,11 +1,11 @@
-import { Grid, Heading, Stack, Text } from '@chakra-ui/react';
-import React, { FC } from 'react';
-import SectionTitle from '../ui-components/texts/SectionTitle';
 import { experiences } from '@/cms/experience';
-import Link from 'next/link';
 import useCustomColor from '@/hooks/useCustomColor';
+import { Grid, Heading, Stack } from '@chakra-ui/react';
+import Link from 'next/link';
+import { FC } from 'react';
 import JobCard from '../cards/JobCard';
 import Section from '../layouts/snapping/Section';
+import SectionTitle from '../ui-components/texts/SectionTitle';
 
 type ExperiencesProps = {};
 
