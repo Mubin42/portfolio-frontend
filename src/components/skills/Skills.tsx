@@ -32,7 +32,7 @@ const Skills: FC<SkillsProps> = ({}) => {
 						<ItemHeading>{skill.title}</ItemHeading>
 						<Flex wrap='wrap' gap={gap} ml={3}>
 							{skill.tags.map((tag, index) => (
-								<SkillTags key={index}>{tag}</SkillTags>
+								<SkillTags key={index} tag={tag} />
 							))}
 						</Flex>
 					</Stack>

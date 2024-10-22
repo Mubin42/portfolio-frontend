@@ -1,15 +1,16 @@
 import useCustomColor from '@/hooks/useCustomColor';
-import { Tag, TagProps, useMediaQuery } from '@chakra-ui/react';
+import { SkillTag } from '@/types/SkillTag';
+import { Tag, TagLeftIcon, TagProps, useMediaQuery } from '@chakra-ui/react';
 import React, { FC } from 'react';
 
 type SkillTagsProps = TagProps & {
-	children: React.ReactNode;
+	tag: SkillTag;
 };
 
-const SkillTags: FC<SkillTagsProps> = ({ children, ...props }) => {
+const SkillTags: FC<SkillTagsProps> = ({ tag, ...props }) => {
 	// hooks
 	const [isDesktop] = useMediaQuery('(min-width: 1024px)');
-	const { customGreen } = useCustomColor();
+	const { customGreen, lightBackground } = useCustomColor();
 
 	// states
 
@@ -25,20 +26,18 @@ const SkillTags: FC<SkillTagsProps> = ({ children, ...props }) => {
 
 	return (
 		<Tag
-			p={{ base: '4px 12px', lg: '8px 20px' }}
-			fontSize={{ base: 12, lg: 20 }}
+			p={{ base: '4px 12px', lg: '6px 18px' }}
+			fontSize={{ base: 12, lg: 18 }}
+			fontWeight={400}
 			userSelect='none'
-			cursor='pointer'
-			borderRadius='36px'
-			bg='transparent'
-			color='white'
-			border='1px solid'
-			borderColor={customGreen}
-			// _hover={isDesktop ? { bgColor: customGreen, color: 'black' } : {}}
+			color={tag.color}
+			bgColor={lightBackground}
+			border={`1px solid ${tag.color}`}
 			transition={'all 0.3s ease'}
 			{...props}
 		>
-			{children}
+			<TagLeftIcon boxSize={{ base: '12px', lg: '18px' }} as={tag.icon} />
+			{tag.title}
 		</Tag>
 	);
 };
