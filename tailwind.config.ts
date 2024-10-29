@@ -10,7 +10,11 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
+        // colors custom colors
         background: "var(--background)",
+        navbar: "var(--navbar)",
+
+        // default shade-cn colors
         foreground: "hsl(var(--foreground))",
         card: {
           DEFAULT: "hsl(var(--card))",
@@ -51,10 +55,26 @@ const config: Config = {
           "5": "hsl(var(--chart-5))",
         },
       },
+
+      // custom properties
       borderRadius: {
-        lg: "var(--radius)",
-        md: "calc(var(--radius) - 2px)",
-        sm: "calc(var(--radius) - 4px)",
+        lg: "12px",
+        md: "6px",
+        sm: "4px",
+      },
+      boxShadow: {
+        light: "4px 4px 0px 0px #000",
+        dark: "4px 4px 0px 0px #000",
+      },
+      translate: {
+        boxShadowX: "4px",
+        boxShadowY: "4px",
+        reverseBoxShadowX: "-4px",
+        reverseBoxShadowY: "-4px",
+      },
+      fontWeight: {
+        base: "500",
+        heading: "700",
       },
     },
   },

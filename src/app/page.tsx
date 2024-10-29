@@ -1,6 +1,9 @@
+import Navbar from "@/components/providers/navbar/Navbar";
+
 export default function Home() {
   return (
-    <div className="flex bg-background h-[100vh] w-[100vw] justify-center items-center ">
+    <div className="bg-background h-screen w-screen">
+      <Navbar />
       Blank page
     </div>
   );
