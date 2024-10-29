@@ -25,7 +25,7 @@ const Navbar: FC<Props> = ({}) => {
   );
 
   return (
-    <div className="flex w-full h-16 bg-navbar px-4 lg:px-32 justify-between items-center">
+    <div className="flex w-full py-4 lg:py-6 bg-navbar px-4 lg:px-32 border-b-4 border-border justify-between items-center">
       <ModeToggle />
       {desktopRight}
     </div>
