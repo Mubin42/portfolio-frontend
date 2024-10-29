@@ -12,7 +12,7 @@ const DesktopNavItem: FC<Props> = ({ data, className }) => {
     <Link href={data.href}>
       <div
         className={cn(
-          "relative text-md transition duration-150 ease-in-out hover:-translate-y-1",
+          "relative text-md font-bold transition duration-150 ease-in-out hover:-translate-y-1",
           className,
         )}
       >

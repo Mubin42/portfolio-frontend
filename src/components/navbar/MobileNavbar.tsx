@@ -10,7 +10,7 @@ import {
   SheetTrigger,
 } from "../neobrutalism-ui/Sheet";
 import { Button } from "../neobrutalism-ui/Button";
-import { Menu } from "lucide-react";
+import { FileDown, FileText, Menu } from "lucide-react";
 import navData from "./navData";
 import Link from "next/link";
 
@@ -26,10 +26,20 @@ const MobileNavbar: FC<Props> = ({}) => {
   const body = (
     <div className="grid gap-4 py-4">
       {navData.map((nav, index) => (
-        <Link key={index} href={nav.href}>
-          <div className="text-xl font-semibold">{nav.title}</div>
-        </Link>
+        <SheetClose asChild key={index}>
+          <Link href={nav.href}>
+            <div className="text-xl font-semibold">{nav.title}</div>
+          </Link>
+        </SheetClose>
       ))}
+
+      <a
+        href="/kazi_mubin_cv.pdf"
+        download
+        className="flex text-xl gap-2 font-semibold items-center"
+      >
+        <span>Resume</span> <FileDown className="size-6" />
+      </a>
     </div>
   );
 

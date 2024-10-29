@@ -6,6 +6,7 @@ import Link from "next/link";
 import { Button } from "../neobrutalism-ui/Button";
 import DesktopNavItem from "./DesktopNavItem";
 import MobileNavbar from "./MobileNavbar";
+import { FileDown } from "lucide-react";
 
 type Props = {};
 
@@ -16,11 +17,9 @@ const Navbar: FC<Props> = ({}) => {
         {navData.map((nav, index) => {
           return <DesktopNavItem key={index} data={nav} />;
         })}
-        <Button>
-          <a href="/kazi_mubin_cv.pdf" download>
-            <span>Resume</span>
-          </a>
-        </Button>
+        <a href="/kazi_mubin_cv.pdf" download>
+          <Button>Resume</Button>
+        </a>
       </div>
     </div>
   );
