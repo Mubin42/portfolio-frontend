@@ -13,6 +13,11 @@ const config: Config = {
         // colors custom colors
         background: "var(--background)",
         navbar: "var(--navbar)",
+        text: "var(--text)",
+        main: "var(--main)",
+        mainAccent: "var(--mainAccent)",
+        border: "var(--border)",
+        secondaryBlack: "var(--secondaryBlack)",
 
         // default shade-cn colors
         foreground: "hsl(var(--foreground))",
@@ -44,7 +49,6 @@ const config: Config = {
           DEFAULT: "hsl(var(--destructive))",
           foreground: "hsl(var(--destructive-foreground))",
         },
-        border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
         chart: {
@@ -59,7 +63,7 @@ const config: Config = {
       // custom properties
       borderRadius: {
         lg: "12px",
-        md: "6px",
+        base: "6px",
         sm: "4px",
       },
       boxShadow: {
