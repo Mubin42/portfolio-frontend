@@ -5,6 +5,7 @@ import navData from "./navData";
 import Link from "next/link";
 import { Button } from "../neobrutalism-ui/Button";
 import DesktopNavItem from "./DesktopNavItem";
+import MobileNavbar from "./MobileNavbar";
 
 type Props = {};
 
@@ -28,6 +29,7 @@ const Navbar: FC<Props> = ({}) => {
     <div className="flex w-full py-4 lg:py-6 bg-navbar px-4 lg:px-32 border-b-4 border-border justify-between items-center">
       <ModeToggle />
       {desktopRight}
+      <MobileNavbar />
     </div>
   );
 };
