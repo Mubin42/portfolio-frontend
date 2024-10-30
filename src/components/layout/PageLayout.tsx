@@ -13,7 +13,7 @@ const PageLayout: FC<Props> = ({ children, className }) => {
       <Navbar />
       <div
         className={cn(
-          "px-4 py-16 lg:px-32 lg:py-32 max-w-screen-xl mx-auto",
+          "px-4 py-32 lg:px-32 lg:py-48 max-w-screen-xl mx-auto",
           className,
         )}
       >

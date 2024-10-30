@@ -1,12 +1,10 @@
 "use client";
 import { FC } from "react";
 import ModeToggle from "../custom-components/ModeToggle";
-import navData from "./navData";
-import Link from "next/link";
 import { Button } from "../neobrutalism-ui/Button";
 import DesktopNavItem from "./DesktopNavItem";
 import MobileNavbar from "./MobileNavbar";
-import { FileDown } from "lucide-react";
+import navData from "./navData";
 
 type Props = {};
 
@@ -25,8 +23,10 @@ const Navbar: FC<Props> = ({}) => {
   );
 
   return (
-    <div className="flex w-full py-4 lg:py-6 bg-navbar px-4 lg:px-32 border-b-4 border-border justify-between items-center">
-      <ModeToggle />
+    <div className="fixed z-50 flex w-screen py-4 lg:py-6 bg-navbar px-4 lg:px-32 border-b-4 border-border justify-between items-center">
+      <div className="flex items-center gap-4">
+        <ModeToggle />
+      </div>
       {desktopRight}
       <MobileNavbar />
     </div>
