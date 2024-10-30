@@ -15,7 +15,7 @@ const Navbar: FC<Props> = ({}) => {
         {navData.map((nav, index) => {
           return <DesktopNavItem key={index} data={nav} />;
         })}
-        <a href="/kazi_mubin_cv.pdf" download>
+        <a href="/kazi_mubin_cv.pdf" target="_blank" rel="noopener noreferrer">
           <Button>Resume</Button>
         </a>
       </div>

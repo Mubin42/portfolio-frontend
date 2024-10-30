@@ -2,12 +2,12 @@ import React, { useState, useEffect, FC } from "react";
 
 const intros = [
   "Software Engineer",
-  "Graphic Designer",
-  "Web Developer",
+  "Full Stack",
+  "Gamer",
   "Problem Solver",
   "Creative Thinker",
   "Coffee Addict",
-  "Tech Geek",
+  "Tech Nerd",
 ];
 
 const Bubble: FC = () => {

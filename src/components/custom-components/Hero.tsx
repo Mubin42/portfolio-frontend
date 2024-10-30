@@ -3,13 +3,14 @@ import PersonSvg from "../icons/PersonSvg";
 import Bubble from "./Bubble";
 import { Button } from "../neobrutalism-ui/Button";
 import useScramble from "@/hooks/useScramble";
+import { Card, CardContent } from "../neobrutalism-ui/Card";
 
 type Props = {};
 
 const Hero: FC<Props> = ({}) => {
   const { scrambledText } = useScramble("Mubin");
   return (
-    <div className="grid gap-8 grid-cols-1 lg:grid-cols-3">
+    <div className="grid grid-cols-1 gap-y-4 lg:gap-x-16 lg:grid-cols-3">
       <div className="flex flex-col items-center lg:items-start gap-4 col-span-2 order-2 lg:order-1">
         <h1 className="font-black font-sans text-4xl lg:text-8xl ">
           Hi, I'm {scrambledText}
@@ -22,7 +23,8 @@ const Hero: FC<Props> = ({}) => {
           <Button variant="neutral">Contact Me</Button>
         </div>
       </div>
-      <div className="col-span-1 order-1 lg:order-2 flex items-center justify-center relative">
+
+      <div className="flex items-center justify-center relative order-1 lg:order-2">
         <PersonSvg className="max-w-52" />
         <div className="absolute -top-5 right-5">
           <Bubble />
