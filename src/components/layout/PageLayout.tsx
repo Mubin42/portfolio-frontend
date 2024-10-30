@@ -1,6 +1,7 @@
 import { FC } from "react";
 import Navbar from "../navbar/Navbar";
 import { cn } from "@/lib/utils";
+import Footer from "../custom-components/Footer";
 
 type Props = {
   children: React.ReactNode;
@@ -19,6 +20,7 @@ const PageLayout: FC<Props> = ({ children, className }) => {
       >
         {children}
       </div>
+      <Footer />
     </div>
   );
 };

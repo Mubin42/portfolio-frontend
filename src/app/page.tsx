@@ -1,8 +1,6 @@
 "use client";
 
-import Bubble from "@/components/custom-components/Bubble";
 import Hero from "@/components/custom-components/Hero";
-import PersonSvg from "@/components/icons/PersonSvg";
 import { NextPage } from "next";
 
 const HomePage: NextPage = () => {
