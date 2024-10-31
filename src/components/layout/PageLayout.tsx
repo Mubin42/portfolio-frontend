@@ -15,19 +15,22 @@ const PageLayout: FC<Props> = ({ children, className }) => {
     <ReactLenis
       root
       options={{
-        lerp: 0.1, // Linear interpolation (0-1). Smaller = smoother
-        duration: 1.5, // Scroll duration in seconds
-        smoothWheel: true, // Enable smooth scrolling for mouse wheel
-        // smoothTouch: true, // Don't enable smooth scrolling for touch devices
-        wheelMultiplier: 1, // Wheel speed multiplier
-        infinite: false, // Don't enable infinite scroll
-        orientation: "vertical", // Scroll orientation
-        gestureOrientation: "vertical", // Gesture orientation
-        touchMultiplier: 2, // Touch speed multiplier
-        syncTouch: false, // Enable touch synchronization
+        lerp: 0.1,
+        duration: 1.5,
+        smoothWheel: true,
+        wheelMultiplier: 1,
+        infinite: false,
+        orientation: "vertical",
+        gestureOrientation: "vertical",
+        touchMultiplier: 2,
+        syncTouch: false,
       }}
     >
-      <div className="bg-background h-screen w-screen">
+      <div className="relative min-h-screen w-screen">
+        {/* Background div */}
+        <div className="fixed inset-0 -z-10 h-full w-full bg-background bg-[linear-gradient(to_right,#80808033_1px,transparent_1px),linear-gradient(to_bottom,#80808033_1px,transparent_1px)] bg-[size:70px_70px]"></div>
+
+        {/* Content */}
         <Navbar />
         <div
           className={cn(
