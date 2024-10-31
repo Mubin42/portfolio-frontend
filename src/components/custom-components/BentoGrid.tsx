@@ -60,24 +60,29 @@ const BentoGrid: FC<Props> = ({}) => {
       </CardContent>
     </Card>
   );
+
+  const linkSection = (
+    <div className="grid grid-cols-2 gap-4">
+      {links.map((link, index) => (
+        <Card key={index} className="flex flex-col justify-center min-h-28">
+          <CardHeader>{link.icon}</CardHeader>
+          <CardContent>
+            <div className="flex flex-col gap-2">
+              <h1 className="text-xl font-extrabold">{link.title}</h1>
+              <p className="hover:underline cursor-pointer text-base font-normal">
+                @{link.username}
+              </p>
+            </div>
+          </CardContent>
+        </Card>
+      ))}
+    </div>
+  );
+
   return (
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
       {stacks}
-      <div className="grid grid-cols-2 gap-4">
-        {links.map((link, index) => (
-          <Card key={index} className="flex flex-col justify-center min-h-28">
-            <CardHeader>{link.icon}</CardHeader>
-            <CardContent>
-              <div className="flex flex-col gap-2">
-                <h1 className="text-xl font-extrabold">{link.title}</h1>
-                <p className="hover:underline cursor-pointer text-base font-normal">
-                  @{link.username}
-                </p>
-              </div>
-            </CardContent>
-          </Card>
-        ))}
-      </div>
+      {linkSection}
     </div>
   );
 };
