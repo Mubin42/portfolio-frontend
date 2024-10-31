@@ -8,15 +8,15 @@ import { Card, CardContent } from "../neobrutalism-ui/Card";
 type Props = {};
 
 const Hero: FC<Props> = ({}) => {
-  const { scrambledText } = useScramble("Mubin");
+  const { scrambledText } = useScramble("Software Enginner");
   return (
     <div className="grid grid-cols-1 gap-y-4 lg:gap-x-16 lg:grid-cols-3">
       <div className="flex flex-col items-center lg:items-start gap-4 col-span-2 order-2 lg:order-1">
         <h1 className="font-black font-sans text-4xl lg:text-8xl ">
-          Hi, I'm {scrambledText}
+          Hi, I'm Mubin
         </h1>
         <p className="text-2xl lg:text-4xl">
-          I'm a <span className="text-main">Software Engineer.</span>
+          I'm a <span className="text-main">{scrambledText}</span>
         </p>
         <div className="flex gap-4">
           <Button>View Projects</Button>
