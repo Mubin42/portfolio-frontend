@@ -1,3 +1,4 @@
+import { websiteURL } from "@/lib/constants";
 import { Metadata } from "next";
 
 const siteConfig = {
@@ -5,8 +6,8 @@ const siteConfig = {
   title: "Kazi Ehsanul Mubin | Software Engineer",
   description:
     "I'm a software engineer who loves to build things for the web. I'm passionate about creating high-qualitycallable software that is easy to use and maintain.",
-  url: "https://kazimubin.dev",
-  ogImage: "https://kazimubin.dev/profile_photo.jpg",
+  url: websiteURL,
+  ogImage: `${websiteURL}/profile_photo.jpg`,
   links: {
     github: "https://github.com/Mubin42",
     linkedin: "https://www.linkedin.com/in/kazi-mubin/",

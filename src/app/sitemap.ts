@@ -1,27 +1,28 @@
+import { websiteURL } from "@/lib/constants";
 import { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
-      url: "https://kazimubin.dev",
+      url: `${websiteURL}/`,
       lastModified: new Date(),
       changeFrequency: "yearly",
       priority: 1,
     },
     {
-      url: "https://kazimubin.dev/projects",
+      url: `${websiteURL}/about`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.8,
     },
     {
-      url: "https://kazimubin.dev/about",
+      url: `${websiteURL}/experiences`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.8,
     },
     {
-      url: "https://kazimubin.dev/experiences",
+      url: `${websiteURL}/projects`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.8,
