@@ -1,3 +1,4 @@
+import { cn } from "@/lib/utils";
 import { FC } from "react";
 
 type Props = { className?: string };
@@ -5,11 +6,10 @@ type Props = { className?: string };
 const PersonSvg: FC<Props> = ({ className, ...props }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    width="full"
-    height="full"
     fill="none"
     viewBox="0 0 632 632"
-    className={className}
+    preserveAspectRatio="xMidYMid meet"
+    className={cn("w-full h-full", className)}
     {...props}
   >
     <circle cx={316} cy={316} r={316} fill="#fff" className="fill-primary" />

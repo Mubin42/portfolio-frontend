@@ -25,7 +25,9 @@ const Hero: FC<Props> = ({}) => {
       </div>
 
       <div className="flex items-center justify-center relative order-1 lg:order-2">
-        <PersonSvg className="max-w-52" />
+        <div className="h-52 w-52">
+          <PersonSvg />
+        </div>
         <div className="absolute -top-5 right-5">
           <Bubble />
         </div>
