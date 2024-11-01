@@ -4,27 +4,27 @@ import { NextPage } from "next";
 const experiences = [
   {
     role: "Software Enginner",
-    company: "PT. Karya Anak Bangsa",
-    year: "September 2021 - Present",
+    company: "ZOLO Inc",
+    year: "June 2024 - Present",
     responsibility:
-      "Developing and maintaining web application for internal and external use. Collaborating with other team members to deliver high quality software.",
-    techstacks: ["Next.js", "React.js"],
+      "Design and implement new features for both frontend and backend, including API creation and database management for the company's main product. Collaborate with other team members to deliver high quality software.",
+    techstacks: ["Next.js", "Prisma", "PostgreSQL"],
+  },
+  {
+    role: "Coding Instructor [Part-time]",
+    company: "happycoders.io",
+    year: "June 2022 - Present",
+    responsibility:
+      "Teaching Python and Scratch Programming, fostering a strong foundation in programming concepts to k2-k12 students.",
+    techstacks: ["Scratch", "Python", "Java"],
   },
   {
     role: "Software Enginner",
-    company: "PT. Karya Anak Bangsa",
-    year: "September 2021 - Present",
+    company: "thinkcrypt.io",
+    year: "June 2023 - May 2024",
     responsibility:
       "Developing and maintaining web application for internal and external use. Collaborating with other team members to deliver high quality software.",
-    techstacks: ["Next.js", "React.js"],
-  },
-  {
-    role: "Software Enginner",
-    company: "PT. Karya Anak Bangsa",
-    year: "September 2021 - Present",
-    responsibility:
-      "Developing and maintaining web application for internal and external use. Collaborating with other team members to deliver high quality software.",
-    techstacks: ["Next.js", "React.js"],
+    techstacks: ["Next.js", "React.js", "Express.js", "MongoDB"],
   },
 ];
 
