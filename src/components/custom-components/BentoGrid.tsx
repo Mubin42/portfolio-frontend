@@ -1,11 +1,12 @@
-import { FC } from "react";
+import {FC} from "react";
 import {
   Card,
   CardContent,
   CardHeader,
   CardTitle,
 } from "../neobrutalism-ui/Card";
-import { Github, Linkedin, Twitter, Youtube } from "lucide-react";
+import {Github, Linkedin, Twitter, Youtube} from "lucide-react";
+import {Badge} from "@/components/neobrutalism-ui/Badge";
 
 type Props = {};
 
@@ -14,25 +15,25 @@ const BentoGrid: FC<Props> = ({}) => {
     {
       title: "Github",
       href: "github.com",
-      icon: <Github className="h-10 w-10" />,
+      icon: <Github className="h-10 w-10"/>,
       username: "johndoe",
     },
     {
       title: "Linkedin",
       href: "linkedin.com",
-      icon: <Linkedin className="h-10 w-10" />,
+      icon: <Linkedin className="h-10 w-10"/>,
       username: "johndoe",
     },
     {
       title: "Youtube",
       href: "youtube.com",
-      icon: <Youtube className="h-10 w-10" />,
+      icon: <Youtube className="h-10 w-10"/>,
       username: "johndoe",
     },
     {
       title: "Twitter",
       href: "twitter.com",
-      icon: <Twitter className="h-10 w-10" />,
+      icon: <Twitter className="h-10 w-10"/>,
       username: "johndoe",
     },
   ];
@@ -40,15 +41,26 @@ const BentoGrid: FC<Props> = ({}) => {
   const stacks = (
     <Card>
       <CardHeader className="font-cera font-bold">
-        <CardTitle>My Tech Stacks</CardTitle>
+        <CardTitle className="text-2xl">My Tech Stacks</CardTitle>
       </CardHeader>
       <CardContent>
         <div className="flex justify-between md:justify-start pl-4">
           <ul className="space-y-2 md:mr-16">
-            <li>Javascript</li>
-            <li>Typescript</li>
-            <li>Tailwind</li>
-            <li>NodeJS</li>
+            <li>
+              <Badge variant='neutral'>Javascript</Badge>
+            </li>
+            <li>
+              <Badge variant='neutral'>React</Badge>
+            </li>
+            <li>
+              <Badge variant='neutral'>Typescript</Badge>
+            </li>
+            <li>
+              <Badge variant='neutral'>Tailwind</Badge>
+            </li>
+            <li>
+              <Badge variant='neutral'>NodeJS</Badge>
+            </li>
           </ul>
           <ul className="space-y-2">
             <li>ExpressJS</li>
