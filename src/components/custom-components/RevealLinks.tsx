@@ -1,13 +1,31 @@
 import React from "react";
 import {motion} from "framer-motion";
 
+const linksData = [
+  {
+    title: "GitHub",
+    href: "https://github.com/Mubin42",
+
+  },
+  {
+    title: "LinkedIn",
+    href: "https://www.linkedin.com/in/kazi-mubin/"
+  }, {
+    title: "Facebook",
+    href: "https://www.facebook.com/mubin.kazi.5"
+  }
+];
+
 export const RevealLinks = () => {
   return (
     <section className="grid gap-2 sm:py-10 lg:py-24 text-secondaryBlack dark:text-main">
-      <FlipLink href="#">Twitter</FlipLink>
-      <FlipLink href="#">Linkedin</FlipLink>
-      <FlipLink href="#">Facebook</FlipLink>
-      <FlipLink href="#">Instagram</FlipLink>
+      {
+        linksData.map((link, index) => (
+          <FlipLink key={index} href={link.href}>
+            {link.title}
+          </FlipLink>
+        ))
+      }
     </section>
   );
 };
