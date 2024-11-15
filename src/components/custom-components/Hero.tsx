@@ -1,14 +1,14 @@
-import { FC } from "react";
+import {FC} from "react";
 import PersonSvg from "../icons/PersonSvg";
 import Bubble from "./Bubble";
-import { Button } from "../neobrutalism-ui/Button";
+import {Button} from "../neobrutalism-ui/Button";
 import useScramble from "@/hooks/useScramble";
-import { Card, CardContent } from "../neobrutalism-ui/Card";
+import {Card, CardContent} from "../neobrutalism-ui/Card";
 
 type Props = {};
 
 const Hero: FC<Props> = ({}) => {
-  const { scrambledText } = useScramble("Software Engineer");
+  const {scrambledText} = useScramble("Software Engineer");
   return (
     <div className="grid grid-cols-1 gap-y-4 lg:gap-x-16 lg:grid-cols-3">
       <div className="flex flex-col items-center lg:items-start gap-4 col-span-2 order-2 lg:order-1">
@@ -26,10 +26,10 @@ const Hero: FC<Props> = ({}) => {
 
       <div className="flex items-center justify-center relative order-1 lg:order-2">
         <div className="h-52 w-52">
-          <PersonSvg />
-        </div>
-        <div className="absolute -top-5 right-5">
-          <Bubble />
+          <PersonSvg/>
+          <div className="absolute -top-5 right-5">
+            <Bubble/>
+          </div>
         </div>
       </div>
     </div>

@@ -38,37 +38,31 @@ const BentoGrid: FC<Props> = ({}) => {
     },
   ];
 
+  const stackData = [
+    "Javascript",
+    "Typescript",
+    "React.js",
+    "Next.js",
+    "Express.js",
+    "NestJS",
+    "ASP.NET Core",
+  ]
+
   const stacks = (
     <Card>
       <CardHeader className="font-cera font-bold">
-        <CardTitle className="text-2xl">My Tech Stacks</CardTitle>
+        <CardTitle className="text-4xl">My Tech Stacks</CardTitle>
       </CardHeader>
       <CardContent>
-        <div className="flex justify-between md:justify-start pl-4">
-          <ul className="space-y-2 md:mr-16">
-            <li>
-              <Badge variant='neutral'>Javascript</Badge>
-            </li>
-            <li>
-              <Badge variant='neutral'>React</Badge>
-            </li>
-            <li>
-              <Badge variant='neutral'>Typescript</Badge>
-            </li>
-            <li>
-              <Badge variant='neutral'>Tailwind</Badge>
-            </li>
-            <li>
-              <Badge variant='neutral'>NodeJS</Badge>
-            </li>
-          </ul>
-          <ul className="space-y-2">
-            <li>ExpressJS</li>
-            <li>Docker</li>
-            <li>Git / Github</li>
-            <li>MongoDB</li>
-          </ul>
+        <div className="flex gap-2 flex-wrap">
+          {stackData.map((stack, index) => (
+            <Badge key={index} variant="neutral" size="lg">
+              {stack}
+            </Badge>
+          ))}
         </div>
+
+
       </CardContent>
     </Card>
   );

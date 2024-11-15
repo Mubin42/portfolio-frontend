@@ -1,13 +1,13 @@
 import React from "react";
-import { motion } from "framer-motion";
+import {motion} from "framer-motion";
 
 export const RevealLinks = () => {
   return (
-    <section className="grid place-content-center gap-2 text-black">
-      <FlipLink href="#">Github</FlipLink>
-      <FlipLink href="#">Linkedin</FlipLink>
-      <FlipLink href="#">Youtube</FlipLink>
+    <section className="grid gap-2 sm:py-10 lg:py-24 text-secondaryBlack dark:text-main">
       <FlipLink href="#">Twitter</FlipLink>
+      <FlipLink href="#">Linkedin</FlipLink>
+      <FlipLink href="#">Facebook</FlipLink>
+      <FlipLink href="#">Instagram</FlipLink>
     </section>
   );
 };
@@ -15,13 +15,13 @@ export const RevealLinks = () => {
 const DURATION = 0.25;
 const STAGGER = 0.025;
 
-const FlipLink = ({ children, href }: { children: string; href: string }) => {
+const FlipLink = ({children, href}: { children: string; href: string }) => {
   return (
     <motion.a
       initial="initial"
       whileHover="hovered"
       href={href}
-      className="relative block overflow-hidden whitespace-nowrap text-7xl font-black uppercase md:text-8xl lg:text-8xl"
+      className="relative block overflow-hidden whitespace-nowrap text-5xl font-black uppercase sm:text-7xl md:text-8xl lg:text-9xl"
       style={{
         lineHeight: 0.75,
       }}
