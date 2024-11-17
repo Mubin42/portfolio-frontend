@@ -7,46 +7,14 @@ import {
 } from "../neobrutalism-ui/Card";
 import {Github, Linkedin, Twitter, Youtube} from "lucide-react";
 import {Badge} from "@/components/neobrutalism-ui/Badge";
+import bentoLinkData from '@/cms/bentoLinkData';
+import Link from 'next/link';
+import { techStacks } from '@/cms/techStacks';
 
 type Props = {};
 
 const BentoGrid: FC<Props> = ({}) => {
-  const links = [
-    {
-      title: "Github",
-      href: "github.com",
-      icon: <Github className="h-10 w-10"/>,
-      username: "johndoe",
-    },
-    {
-      title: "Linkedin",
-      href: "linkedin.com",
-      icon: <Linkedin className="h-10 w-10"/>,
-      username: "johndoe",
-    },
-    {
-      title: "Youtube",
-      href: "youtube.com",
-      icon: <Youtube className="h-10 w-10"/>,
-      username: "johndoe",
-    },
-    {
-      title: "Twitter",
-      href: "twitter.com",
-      icon: <Twitter className="h-10 w-10"/>,
-      username: "johndoe",
-    },
-  ];
 
-  const stackData = [
-    "Javascript",
-    "Typescript",
-    "React.js",
-    "Next.js",
-    "Express.js",
-    "NestJS",
-    "ASP.NET Core",
-  ]
 
   const stacks = (
     <Card>
@@ -55,7 +23,7 @@ const BentoGrid: FC<Props> = ({}) => {
       </CardHeader>
       <CardContent>
         <div className="flex gap-2 flex-wrap">
-          {stackData.map((stack, index) => (
+          {techStacks.map((stack, index) => (
             <Badge key={index} variant="neutral" size="lg">
               {stack}
             </Badge>
@@ -69,15 +37,17 @@ const BentoGrid: FC<Props> = ({}) => {
 
   const linkSection = (
     <div className="grid grid-cols-2 gap-4">
-      {links.map((link, index) => (
+      {bentoLinkData.map((item, index) => (
         <Card key={index} className="flex flex-col justify-center min-h-28">
-          <CardHeader>{link.icon}</CardHeader>
+          <CardHeader>{item.icon}</CardHeader>
           <CardContent>
             <div className="flex flex-col gap-2">
-              <h1 className="text-xl font-extrabold">{link.title}</h1>
-              <p className="hover:underline cursor-pointer text-base font-normal">
-                @{link.username}
-              </p>
+              <h1 className="text-xl font-extrabold">{item.title}</h1>
+              <Link href={item.href} target="_blank">
+                <p className="hover:underline cursor-pointer text-base font-normal">
+                  @{item.username}
+                </p>
+              </Link>
             </div>
           </CardContent>
         </Card>

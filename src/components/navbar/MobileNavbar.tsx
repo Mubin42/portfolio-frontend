@@ -34,12 +34,13 @@ const MobileNavbar: FC<Props> = ({}) => {
       ))}
 
       <a
-        href="/kazi_mubin_cv.pdf"
-        download
+        href="/kazi_mubin_cv.pdf" target="_blank" rel="noopener noreferrer"
         className="flex text-xl gap-2 font-semibold items-center"
       >
         <span>Resume</span> <FileDown className="size-6" />
       </a>
+
+
     </div>
   );
 
