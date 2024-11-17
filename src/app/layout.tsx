@@ -1,7 +1,7 @@
-import "./globals.css";
-import ThemeProvider from "@/components/providers/ThemeProvider";
-import PageLayout from "@/components/layout/PageLayout";
-import { JsonLd } from "./JsonLd";
+import './globals.css';
+import ThemeProvider from '@/components/providers/ThemeProvider';
+import PageLayout from '@/components/layout/PageLayout';
+import { JsonLd } from './JsonLd';
 
 export default function RootLayout({
   children,

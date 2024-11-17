@@ -1,9 +1,9 @@
-"use client";
-import { FC } from "react";
-import Navbar from "../navbar/Navbar";
-import { cn } from "@/lib/utils";
-import Footer from "../custom-components/Footer";
-import { ReactLenis } from "@studio-freight/react-lenis";
+'use client';
+import { FC } from 'react';
+import Navbar from '../navbar/Navbar';
+import { cn } from '@/lib/utils';
+import Footer from '../custom-components/Footer';
+import { ReactLenis } from '@studio-freight/react-lenis';
 
 type Props = {
   children: React.ReactNode;
@@ -20,8 +20,8 @@ const PageLayout: FC<Props> = ({ children, className }) => {
         smoothWheel: true,
         wheelMultiplier: 1,
         infinite: false,
-        orientation: "vertical",
-        gestureOrientation: "vertical",
+        orientation: 'vertical',
+        gestureOrientation: 'vertical',
         touchMultiplier: 2,
         syncTouch: false,
       }}
@@ -34,8 +34,8 @@ const PageLayout: FC<Props> = ({ children, className }) => {
         <Navbar />
         <div
           className={cn(
-            "px-4 py-28 lg:px-32 lg:py-28 max-w-screen-xl mx-auto",
-            className,
+            'px-4 py-28 lg:px-32 lg:py-28 max-w-screen-xl mx-auto',
+            className
           )}
         >
           {children}

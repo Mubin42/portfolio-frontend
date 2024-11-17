@@ -1,1 +1,1 @@
-export const websiteURL = "https://v2.kazimubin.dev";
+export const websiteURL = 'https://kazimubin.dev';

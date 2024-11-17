@@ -1,5 +1,5 @@
-import { cn } from "@/lib/utils";
-import { FC } from "react";
+import { cn } from '@/lib/utils';
+import { FC } from 'react';
 
 type Props = { className?: string };
 
@@ -9,7 +9,7 @@ const PersonSvg: FC<Props> = ({ className, ...props }) => (
     fill="none"
     viewBox="0 0 632 632"
     preserveAspectRatio="xMidYMid meet"
-    className={cn("w-full h-full", className)}
+    className={cn('w-full h-full', className)}
     {...props}
   >
     <circle cx={316} cy={316} r={316} fill="#fff" className="fill-primary" />

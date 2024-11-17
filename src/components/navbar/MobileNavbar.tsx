@@ -1,4 +1,4 @@
-import { FC } from "react";
+import { FC } from 'react';
 import {
   Sheet,
   SheetClose,
@@ -8,11 +8,11 @@ import {
   SheetHeader,
   SheetTitle,
   SheetTrigger,
-} from "../neobrutalism-ui/Sheet";
-import { Button } from "../neobrutalism-ui/Button";
-import { FileDown, FileText, Menu } from "lucide-react";
-import navData from "./navData";
-import Link from "next/link";
+} from '../neobrutalism-ui/Sheet';
+import { Button } from '../neobrutalism-ui/Button';
+import { FileDown, FileText, Menu } from 'lucide-react';
+import navData from './navData';
+import Link from 'next/link';
 
 type Props = {};
 
@@ -34,13 +34,13 @@ const MobileNavbar: FC<Props> = ({}) => {
       ))}
 
       <a
-        href="/kazi_mubin_cv.pdf" target="_blank" rel="noopener noreferrer"
+        href="/kazi_mubin_cv.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
         className="flex text-xl gap-2 font-semibold items-center"
       >
         <span>Resume</span> <FileDown className="size-6" />
       </a>
-
-
     </div>
   );
 

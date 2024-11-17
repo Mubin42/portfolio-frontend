@@ -1,10 +1,10 @@
-"use client";
-import { FC } from "react";
-import ModeToggle from "../custom-components/ModeToggle";
-import { Button } from "../neobrutalism-ui/Button";
-import DesktopNavItem from "./DesktopNavItem";
-import MobileNavbar from "./MobileNavbar";
-import navData from "./navData";
+'use client';
+import { FC } from 'react';
+import ModeToggle from '../custom-components/ModeToggle';
+import { Button } from '../neobrutalism-ui/Button';
+import DesktopNavItem from './DesktopNavItem';
+import MobileNavbar from './MobileNavbar';
+import navData from './navData';
 
 type Props = {};
 

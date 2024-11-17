@@ -16,9 +16,9 @@ import Link from 'next/link';
 
 type Props = {
   data: Project;
-}
+};
 
-const ProjectCard: FC<Props> = ({data}) => {
+const ProjectCard: FC<Props> = ({ data }) => {
   return (
     <Card>
       <img
@@ -31,23 +31,23 @@ const ProjectCard: FC<Props> = ({data}) => {
         <CardDescription>{data.description}</CardDescription>
       </CardHeader>
       <CardContent>
-        <div className='flex flex-wrap gap-2'>
+        <div className="flex flex-wrap gap-2">
           {data.techStack.map((tech) => (
-            <Badge key={tech} variant='neutral'>{tech}</Badge>
+            <Badge key={tech} variant="neutral">
+              {tech}
+            </Badge>
           ))}
         </div>
       </CardContent>
-      <CardFooter className='justify-end'>
-       <Link href={data.link}
-        target="_blank"
-       >
-         <Button size='icon' variant="neutral">
-           <SquareArrowOutUpRight size={16} />
-         </Button>
-       </Link>
+      <CardFooter className="justify-end">
+        <Link href={data.link} target="_blank">
+          <Button size="icon" variant="neutral">
+            <SquareArrowOutUpRight size={16} />
+          </Button>
+        </Link>
       </CardFooter>
     </Card>
-  )
-}
+  );
+};
 
 export default ProjectCard;

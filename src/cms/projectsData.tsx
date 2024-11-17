@@ -4,7 +4,7 @@ export type Project = {
   techStack: string[];
   image: string;
   link: string;
-}
+};
 
 const projects = {
   title: 'Projects',

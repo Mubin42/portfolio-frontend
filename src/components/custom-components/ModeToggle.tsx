@@ -1,7 +1,7 @@
-import { Moon, Sun } from "lucide-react";
-import { FC } from "react";
-import { Button } from "../neobrutalism-ui/Button";
-import { useTheme } from "next-themes";
+import { Moon, Sun } from 'lucide-react';
+import { FC } from 'react';
+import { Button } from '../neobrutalism-ui/Button';
+import { useTheme } from 'next-themes';
 
 type Props = {};
 
@@ -9,10 +9,10 @@ const ModeToggle: FC<Props> = ({}) => {
   const { theme, setTheme } = useTheme();
 
   const toggleTheme = () => {
-    if (theme === "light") {
-      setTheme("dark");
+    if (theme === 'light') {
+      setTheme('dark');
     } else {
-      setTheme("light");
+      setTheme('light');
     }
   };
 

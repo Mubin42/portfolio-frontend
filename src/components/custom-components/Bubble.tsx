@@ -1,17 +1,17 @@
-import React, { useState, useEffect, FC } from "react";
+import React, { useState, useEffect, FC } from 'react';
 
 const intros = [
-  "Software Engineer",
-  "Full Stack",
-  "Gamer",
-  "Problem Solver",
-  "Creative Thinker",
-  "Coffee Addict",
-  "Tech Nerd",
+  'Software Engineer',
+  'Full Stack',
+  'Gamer',
+  'Problem Solver',
+  'Creative Thinker',
+  'Coffee Addict',
+  'Tech Nerd',
 ];
 
 const Bubble: FC = () => {
-  const [randomText, setRandomText] = useState("");
+  const [randomText, setRandomText] = useState('');
 
   useEffect(() => {
     setRandomText(getRandomIntro());

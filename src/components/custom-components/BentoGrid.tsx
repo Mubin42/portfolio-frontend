@@ -1,12 +1,12 @@
-import {FC} from "react";
+import { FC } from 'react';
 import {
   Card,
   CardContent,
   CardHeader,
   CardTitle,
-} from "../neobrutalism-ui/Card";
-import {Github, Linkedin, Twitter, Youtube} from "lucide-react";
-import {Badge} from "@/components/neobrutalism-ui/Badge";
+} from '../neobrutalism-ui/Card';
+import { Github, Linkedin, Twitter, Youtube } from 'lucide-react';
+import { Badge } from '@/components/neobrutalism-ui/Badge';
 import bentoLinkData from '@/cms/bentoLinkData';
 import Link from 'next/link';
 import { techStacks } from '@/cms/techStacks';
@@ -14,8 +14,6 @@ import { techStacks } from '@/cms/techStacks';
 type Props = {};
 
 const BentoGrid: FC<Props> = ({}) => {
-
-
   const stacks = (
     <Card>
       <CardHeader className="font-cera font-bold">
@@ -29,8 +27,6 @@ const BentoGrid: FC<Props> = ({}) => {
             </Badge>
           ))}
         </div>
-
-
       </CardContent>
     </Card>
   );

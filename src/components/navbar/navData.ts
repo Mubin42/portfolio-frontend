@@ -1,19 +1,19 @@
 const navData: NavData[] = [
   {
-    title: "Home",
-    href: "/",
+    title: 'Home',
+    href: '/',
   },
   {
-    title: "About",
-    href: "/about",
+    title: 'About',
+    href: '/about',
   },
   {
-    title: "Experiences",
-    href: "/experiences",
+    title: 'Experiences',
+    href: '/experiences',
   },
   {
-    title: "Projects",
-    href: "/projects",
+    title: 'Projects',
+    href: '/projects',
   },
 ];
 

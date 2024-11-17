@@ -1,5 +1,5 @@
-import React, { FC } from "react";
-import { Card, CardContent } from "../neobrutalism-ui/Card";
+import React, { FC } from 'react';
+import { Card, CardContent } from '../neobrutalism-ui/Card';
 
 type Props = {
   role: string;
@@ -16,7 +16,7 @@ const Timeline: FC<Props> = ({
   responsibility,
   techstacks,
 }) => {
-  const technologies = techstacks.join(" • ");
+  const technologies = techstacks.join(' • ');
 
   return (
     <ol className="relative border-s-2 border-primary">

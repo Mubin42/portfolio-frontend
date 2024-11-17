@@ -1,18 +1,18 @@
 export function JsonLd() {
   const structuredData = {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    name: "Kazi Ehsanul Mubin",
-    url: "https://kazimubin.dev",
-    image: "https://your-domain.com/your-photo.jpg",
+    '@context': 'https://schema.org',
+    '@type': 'Person',
+    name: 'Kazi Ehsanul Mubin',
+    url: 'https://kazimubin.dev',
+    image: 'https://your-domain.com/your-photo.jpg',
     sameAs: [
-      "https://github.com/Mubin42",
-      "https://www.linkedin.com/in/kazi-mubin/",
+      'https://github.com/Mubin42',
+      'https://www.linkedin.com/in/kazi-mubin/',
     ],
-    jobTitle: "Software Engineer",
+    jobTitle: 'Software Engineer',
     worksFor: {
-      "@type": "Organization",
-      name: "ZOLO Inc",
+      '@type': 'Organization',
+      name: 'ZOLO Inc',
     },
   };
 

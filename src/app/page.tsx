@@ -1,8 +1,8 @@
-"use client";
+'use client';
 
-import BentoGrid from "@/components/custom-components/BentoGrid";
-import Hero from "@/components/custom-components/Hero";
-import { NextPage } from "next";
+import BentoGrid from '@/components/custom-components/BentoGrid';
+import Hero from '@/components/custom-components/Hero';
+import { NextPage } from 'next';
 
 const HomePage: NextPage = () => {
   return (
