@@ -3,7 +3,7 @@ import PersonSvg from '../icons/PersonSvg';
 import Bubble from './Bubble';
 import { Button } from '../neobrutalism-ui/Button';
 import useScramble from '@/hooks/useScramble';
-import { Card, CardContent } from '../neobrutalism-ui/Card';
+import Link from 'next/link';
 
 type Props = {};
 
@@ -19,8 +19,12 @@ const Hero: FC<Props> = ({}) => {
           I'm a <span className="text-main">{scrambledText}</span>
         </p>
         <div className="flex gap-4">
-          <Button>View Projects</Button>
-          <Button variant="neutral">Contact Me</Button>
+          <Link href='/projects'>
+            <Button>View Projects</Button>
+          </Link>
+         <Link href='/about'>
+           <Button variant="neutral">Contact Me</Button>
+         </Link>
         </div>
       </div>
 
