@@ -6,7 +6,7 @@ type Props = {
   company: string;
   year: string;
   responsibility: string;
-  techstacks: string[];
+  techStacks: string[];
 };
 
 const Timeline: FC<Props> = ({
@@ -14,9 +14,9 @@ const Timeline: FC<Props> = ({
   company,
   year,
   responsibility,
-  techstacks,
+  techStacks,
 }) => {
-  const technologies = techstacks.join(' • ');
+  const technologies = techStacks.join(' • ');
 
   return (
     <ol className="relative border-s-2 border-primary">

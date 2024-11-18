@@ -14,7 +14,7 @@ const ExperiencePage: NextPage = () => {
             company={exp.company}
             year={exp.year}
             responsibility={exp.responsibility}
-            techstacks={exp.techStacks}
+            techStacks={exp.techStacks}
           />
         ))}
       </div>
