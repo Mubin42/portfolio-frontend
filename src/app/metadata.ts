@@ -65,7 +65,7 @@ const defaultMetadata: Metadata = {
   },
   verification: {
     // Add your verification tokens
-    google: 'your-google-verification-code',
+    // google: 'your-google-verification-code',
     // other verification tokens
   },
 };
